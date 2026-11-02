@@ -1,0 +1,5 @@
+{
+  "raw_black_level": 16,
+  "scope": "Subtract measured RAW8 pedestal before Bayer channel gains; retain original gamma and exposure2989 half-lines",
+  "black_measurement": "../logs/black-20261023.json"
+}

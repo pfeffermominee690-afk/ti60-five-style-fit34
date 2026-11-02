@@ -8,3 +8,9 @@ iverilog -g2012 -s tb_bayer -o build/tests/bayer tests/tb_bayer.sv fpga/rtl/deba
 vvp build/tests/bayer
 iverilog -g2012 -s tb -o build/tests/norm tests/tb_norm_reference.sv fpga/engine/p2_norm_reference_lane.sv
 vvp build/tests/norm
+
+gcc -std=c11 -Wall -Wextra -O2 tests/test_gesture_motion.c -o build/tests/gesture
+build/tests/gesture
+cd fpga
+iverilog -g2012 -s tb_labels -o ../build/tests/labels ../tests/display/tb_labels.sv rtl/fps_osd.sv
+vvp ../build/tests/labels

@@ -3,3 +3,7 @@ __pycache__/
 /build/
 /fpga/work_*/
 /fpga/outflow/
+/line-demo/fpga/work_*/
+/line-demo/fpga/outflow/
+/autoboot/fpga/work_*/
+/autoboot/fpga/outflow/

@@ -1,0 +1,27 @@
+[
+  {
+    "index": 0,
+    "display_name": "木刻",
+    "model": "Lu-Xun-woodcut"
+  },
+  {
+    "index": 1,
+    "display_name": "点彩",
+    "model": "Portrait-de-Metzinger(part)"
+  },
+  {
+    "index": 2,
+    "display_name": "排线速写",
+    "model": "Leonardo-da-Vinci-Helicopter"
+  },
+  {
+    "index": 3,
+    "display_name": "鲜明色彩",
+    "model": "Matisse-Woman-with-a-Hat"
+  },
+  {
+    "index": 4,
+    "display_name": "蓝黄笔触",
+    "model": "Van-Gogh-The-Starry-Night"
+  }
+]
