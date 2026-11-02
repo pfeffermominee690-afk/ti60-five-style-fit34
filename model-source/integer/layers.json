@@ -1,0 +1,272 @@
+[
+  {
+    "name": "generator/enc_0_dw/depthwise",
+    "input": "generator/MirrorPad:0",
+    "output": "generator/enc_0_dw/depthwise:0",
+    "kind": "DepthwiseConv2dNative",
+    "stride": [
+      1,
+      2,
+      2,
+      1
+    ],
+    "shape": [
+      1,
+      240,
+      320,
+      3
+    ]
+  },
+  {
+    "name": "generator/enc_0_pw/Conv2D",
+    "input": "generator/enc_0_dw/Relu:0",
+    "output": "generator/enc_0_pw/Conv2D:0",
+    "kind": "Conv2D",
+    "stride": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "shape": [
+      1,
+      240,
+      320,
+      32
+    ]
+  },
+  {
+    "name": "generator/enc_1_dw/depthwise",
+    "input": "generator/MirrorPad_1:0",
+    "output": "generator/enc_1_dw/depthwise:0",
+    "kind": "DepthwiseConv2dNative",
+    "stride": [
+      1,
+      2,
+      2,
+      1
+    ],
+    "shape": [
+      1,
+      120,
+      160,
+      32
+    ]
+  },
+  {
+    "name": "generator/enc_1_pw/Conv2D",
+    "input": "generator/enc_1_dw/Relu:0",
+    "output": "generator/enc_1_pw/Conv2D:0",
+    "kind": "Conv2D",
+    "stride": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "shape": [
+      1,
+      120,
+      160,
+      64
+    ]
+  },
+  {
+    "name": "generator/enc_2_dw/depthwise",
+    "input": "generator/MirrorPad_2:0",
+    "output": "generator/enc_2_dw/depthwise:0",
+    "kind": "DepthwiseConv2dNative",
+    "stride": [
+      1,
+      2,
+      2,
+      1
+    ],
+    "shape": [
+      1,
+      60,
+      80,
+      64
+    ]
+  },
+  {
+    "name": "generator/enc_2_pw/Conv2D",
+    "input": "generator/enc_2_dw/Relu:0",
+    "output": "generator/enc_2_pw/Conv2D:0",
+    "kind": "Conv2D",
+    "stride": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "shape": [
+      1,
+      60,
+      80,
+      128
+    ]
+  },
+  {
+    "name": "generator/res_0_dw/depthwise",
+    "input": "generator/MirrorPad_3:0",
+    "output": "generator/res_0_dw/depthwise:0",
+    "kind": "DepthwiseConv2dNative",
+    "stride": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "shape": [
+      1,
+      60,
+      80,
+      128
+    ]
+  },
+  {
+    "name": "generator/res_0_pw/Conv2D",
+    "input": "generator/res_0_dw/Relu:0",
+    "output": "generator/res_0_pw/Conv2D:0",
+    "kind": "Conv2D",
+    "stride": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "shape": [
+      1,
+      60,
+      80,
+      128
+    ]
+  },
+  {
+    "name": "generator/dec_0_dw/depthwise",
+    "input": "generator/MirrorPad_4:0",
+    "output": "generator/dec_0_dw/depthwise:0",
+    "kind": "DepthwiseConv2dNative",
+    "stride": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "shape": [
+      1,
+      120,
+      160,
+      128
+    ]
+  },
+  {
+    "name": "generator/dec_0_pw/Conv2D",
+    "input": "generator/dec_0_dw/InstanceNorm/instancenorm/add_1:0",
+    "output": "generator/dec_0_pw/Conv2D:0",
+    "kind": "Conv2D",
+    "stride": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "shape": [
+      1,
+      120,
+      160,
+      64
+    ]
+  },
+  {
+    "name": "generator/dec_1_dw/depthwise",
+    "input": "generator/MirrorPad_5:0",
+    "output": "generator/dec_1_dw/depthwise:0",
+    "kind": "DepthwiseConv2dNative",
+    "stride": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "shape": [
+      1,
+      240,
+      320,
+      64
+    ]
+  },
+  {
+    "name": "generator/dec_1_pw/Conv2D",
+    "input": "generator/dec_1_dw/InstanceNorm/instancenorm/add_1:0",
+    "output": "generator/dec_1_pw/Conv2D:0",
+    "kind": "Conv2D",
+    "stride": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "shape": [
+      1,
+      240,
+      320,
+      32
+    ]
+  },
+  {
+    "name": "generator/dec_2_dw/depthwise",
+    "input": "generator/MirrorPad_6:0",
+    "output": "generator/dec_2_dw/depthwise:0",
+    "kind": "DepthwiseConv2dNative",
+    "stride": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "shape": [
+      1,
+      480,
+      640,
+      32
+    ]
+  },
+  {
+    "name": "generator/dec_2_pw/Conv2D",
+    "input": "generator/dec_2_dw/InstanceNorm/instancenorm/add_1:0",
+    "output": "generator/dec_2_pw/Conv2D:0",
+    "kind": "Conv2D",
+    "stride": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "shape": [
+      1,
+      480,
+      640,
+      16
+    ]
+  },
+  {
+    "name": "generator/output/Conv2D",
+    "input": "generator/MirrorPad_7:0",
+    "output": "generator/output/Conv2D:0",
+    "kind": "Conv2D",
+    "stride": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "shape": [
+      1,
+      480,
+      640,
+      3
+    ]
+  }
+]

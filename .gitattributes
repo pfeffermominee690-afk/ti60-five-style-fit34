@@ -1,0 +1,9 @@
+* -text
+*.bin -diff
+*.hex -diff
+*.mem -diff
+*.memh -diff
+*.bit -diff
+*.elf -diff
+*.npz -diff
+*.npy -diff

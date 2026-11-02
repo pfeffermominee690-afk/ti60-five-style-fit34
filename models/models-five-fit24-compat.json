@@ -1,0 +1,34 @@
+{
+  "styles": [
+    {
+      "index": 0,
+      "style": "Lu-Xun-woodcut",
+      "weight_sha256": "b8d30890628b9c134fb0406c152b633a6bb23ac598b1d8c8a46e7e19757bbb02"
+    },
+    {
+      "index": 1,
+      "style": "Portrait-de-Metzinger(part)",
+      "weight_sha256": "398f467904a00f1f123b591c1011318e1db28c9e34dea43475429e368ff86b35"
+    },
+    {
+      "index": 2,
+      "style": "Leonardo-da-Vinci-Helicopter",
+      "weight_sha256": "7c5e931c8d51727e4171c99272d999862ea771db2da5674ebba179ddd62d6417"
+    },
+    {
+      "index": 3,
+      "style": "Matisse-Woman-with-a-Hat",
+      "weight_sha256": "27216b8e76fac752e3f985158db8b902ca8c2b9ed393765db078f0ebce2bebc6"
+    },
+    {
+      "index": 4,
+      "style": "Van-Gogh-The-Starry-Night",
+      "weight_sha256": "d07221e1c7a6e9d01d5b8ed357f731745b62b770799bcedf2045398a41e3cbaf"
+    }
+  ],
+  "bytes": 330136,
+  "sha256": "aa76d924f0b82404b83a7777ebf8816d7241ef169b2e48b53d898e6a573168d9",
+  "old_two_payloads_exact": true,
+  "header_bytes": 64,
+  "magic": "0x50324739"
+}

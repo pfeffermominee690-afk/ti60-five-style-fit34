@@ -1,0 +1,11 @@
+{
+  "styles": [
+    "woodcut",
+    "pointillism"
+  ],
+  "bytes": 132056,
+  "sha256": "e43d096112b2356ead9ec38bb23a44b678c9782d3f0a04ec31233b7d2e3d2f18",
+  "descriptor_words": 12,
+  "parameters_words": 6,
+  "layout": "CHW RAW and packed per-output-group weights"
+}
