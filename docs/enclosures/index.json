@@ -1,0 +1,130 @@
+[
+  {
+    "id": "A01",
+    "caption": "第一套 · 整机外观",
+    "kind": "photo",
+    "file": "docs/enclosures/originals/same-side/A01.jpg",
+    "original_filename": "14736cbb2f43d918083eab06514d42b7.jpg",
+    "sha256": "f40e2b89878b19e5a7e0f30a68bc6977dda0879f0527cda8dccb3cfe3a21c458"
+  },
+  {
+    "id": "A02",
+    "caption": "第一套 · 整体装配模型",
+    "kind": "mechanical-design",
+    "file": "docs/enclosures/originals/same-side/A02.png",
+    "original_filename": "2f409d23efe8198f74cdbe987d4fa88d.png",
+    "sha256": "f089aa8e43a17abe152a2b054faa746b78279a94e5629e705df8cb2db22e5e72"
+  },
+  {
+    "id": "A03",
+    "caption": "第一套 · 前面板拆装",
+    "kind": "photo",
+    "file": "docs/enclosures/originals/same-side/A03.jpg",
+    "original_filename": "36f446e88642a6bffd75a5d8d74a0579.jpg",
+    "sha256": "d0080a3311f16688016da15da5614b9d4e17dfdeee028767199cb47601eb0480"
+  },
+  {
+    "id": "A04",
+    "caption": "第一套 · 内部连接",
+    "kind": "photo",
+    "file": "docs/enclosures/originals/same-side/A04.jpg",
+    "original_filename": "6dcd8f61844e9538524bfd8d82feb14c.jpg",
+    "sha256": "406ab52702423eea329288961bd73d768aca2d1881c4e3f4ae9275b5a2ed2c62"
+  },
+  {
+    "id": "A05",
+    "caption": "第一套 · 接线与供电布局",
+    "kind": "photo",
+    "file": "docs/enclosures/originals/same-side/A05.jpg",
+    "original_filename": "ab511591e592dde0a6fb73587e429469.jpg",
+    "sha256": "7e59c8bddd7864d11fa7bdd9c7d6899ae77efc531bc559cbc6b6b68b22f6eb5b"
+  },
+  {
+    "id": "A06",
+    "caption": "第一套 · 相机与屏幕固定",
+    "kind": "photo",
+    "file": "docs/enclosures/originals/same-side/A06.jpg",
+    "original_filename": "c1302ef14a727d491e997a12350d51a0.jpg",
+    "sha256": "4f608a974a471722f2671eaba61d015556be71ccfd891ab3023e02111a8a3f1c"
+  },
+  {
+    "id": "A07",
+    "caption": "第一套 · 侧面与通风槽",
+    "kind": "photo",
+    "file": "docs/enclosures/originals/same-side/A07.jpg",
+    "original_filename": "e9f945bd0eaa12e2f7887c819f2b6553.jpg",
+    "sha256": "b50e4e26af19b874553870c9b9c4afcdac4a9672cae409f0ccbec46e3254a1ee"
+  },
+  {
+    "id": "A08",
+    "caption": "第一套 · 主板接口",
+    "kind": "photo",
+    "file": "docs/enclosures/originals/same-side/A08.jpg",
+    "original_filename": "edbc5e1b61a400e91112181e3cfc49c8.jpg",
+    "sha256": "9e838f2db8b1453711f9d16513356a3e828f50234bb1d24a0cae7356b9dff61d"
+  },
+  {
+    "id": "A09",
+    "caption": "第一套 · 分解模型",
+    "kind": "mechanical-design",
+    "file": "docs/enclosures/originals/same-side/A09.png",
+    "original_filename": "a79776490273c7b3cda54f0290962755.png",
+    "sha256": "1620f6a7c7fd0b7fdd42c77d115be9b6c1074557b48805f5f97152aca1d4f420"
+  },
+  {
+    "id": "B01",
+    "caption": "第二套 · 开壳斜视",
+    "kind": "photo",
+    "file": "docs/enclosures/originals/opposite-side/B01.jpg",
+    "original_filename": "038670a383a00d973e62660c598a86c0.jpg",
+    "sha256": "df77539fd7f7d832d09441df5f84a02273fbdf5d1879c156e290bf74fe597c15"
+  },
+  {
+    "id": "B02",
+    "caption": "第二套 · 屏幕面外观",
+    "kind": "photo",
+    "file": "docs/enclosures/originals/opposite-side/B02.jpg",
+    "original_filename": "1ff1eb7379e05889d52a857d37d8d47f.jpg",
+    "sha256": "dfcef119a9a5641eb708d7e77145aa09eb421f0a72dde3a1b05d55f5e0b896ac"
+  },
+  {
+    "id": "B03",
+    "caption": "第二套 · 内部布局",
+    "kind": "photo",
+    "file": "docs/enclosures/originals/opposite-side/B03.jpg",
+    "original_filename": "2eccf31eeeba853327a848a433afb0c7.jpg",
+    "sha256": "fbfe5e9e2794a29e0cba34dc5b4cfdb57310e6b366cd973c559abaf5fab1b31d"
+  },
+  {
+    "id": "B04",
+    "caption": "第二套 · 镜头面外观",
+    "kind": "photo",
+    "file": "docs/enclosures/originals/opposite-side/B04.jpg",
+    "original_filename": "47423fd8342db34bcf7f6cf5a3f3f46c.jpg",
+    "sha256": "a21081901f6e2545860c0a5731ab830500c84b41dd817c46dfffd8034c5299a5"
+  },
+  {
+    "id": "B05",
+    "caption": "第二套 · 分解模型",
+    "kind": "mechanical-design",
+    "file": "docs/enclosures/originals/opposite-side/B05.png",
+    "original_filename": "92f3946b0403d62feb8451434408cc5b.png",
+    "sha256": "499366f30132b9511c4133190bc33b7d8ce57d487eba2ee68bfcc0a91bd74667"
+  },
+  {
+    "id": "B06",
+    "caption": "第二套 · 屏幕面侧视",
+    "kind": "photo",
+    "file": "docs/enclosures/originals/opposite-side/B06.jpg",
+    "original_filename": "c06cf76e43fe286e0cb8508ee7214d30.jpg",
+    "sha256": "4bd0d3bafabfd4fe4a709d7f634ae685cdbf9c0a00f2a9b26a9fa61f2fe17afe"
+  },
+  {
+    "id": "B07",
+    "caption": "第二套 · 整体装配模型",
+    "kind": "mechanical-design",
+    "file": "docs/enclosures/originals/opposite-side/B07.png",
+    "original_filename": "9404fee0d53308dd86c2d3cdbe369e65.png",
+    "sha256": "02e17e212068465104c7a54abeb7eaef25cac8dfa6e0f43d003fbe5a90a83e18"
+  }
+]

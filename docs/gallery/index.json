@@ -7,7 +7,15 @@
     "original_filename": "ec353d90a34b973c90c8969b78ced2e1.jpg",
     "sha256": "d3b465b35bdf1c836a37f483e4d83a608a748693de87e122c7ee8d196c360afd",
     "width": 1706,
-    "height": 1279
+    "height": 1279,
+    "display_file": "docs/gallery/display/real-people/display-10.png",
+    "display_sha256": "ba0faa5e770b773299cac03ec03b9a4ec920c190bc5843a14d6c513e3024e197",
+    "crop_box": {
+      "x": 0,
+      "y": 390,
+      "width": 1706,
+      "height": 889
+    }
   },
   {
     "id": 11,
@@ -17,7 +25,15 @@
     "original_filename": "f1cc91c7791b70deac52f5949d4b6200.jpg",
     "sha256": "89d213f52c9833210b2a87c733f5dce5dc57044009050fc5e60497d5b5a1ab9a",
     "width": 1706,
-    "height": 1279
+    "height": 1279,
+    "display_file": "docs/gallery/display/real-people/display-11.png",
+    "display_sha256": "eb7629d9caa423573c9d073931b00995045162dca0fdaa1837b2b6c4bf6bb483",
+    "crop_box": {
+      "x": 0,
+      "y": 390,
+      "width": 1706,
+      "height": 889
+    }
   },
   {
     "id": 8,
@@ -27,7 +43,15 @@
     "original_filename": "5a3063b6b9dca74359753b1fe6ca1d43.jpg",
     "sha256": "4d2c86ac6b351089897a127cecc07aa568a95ec5ea6e022c6cce702e09250ed6",
     "width": 1706,
-    "height": 1279
+    "height": 1279,
+    "display_file": "docs/gallery/display/real-people/display-08.png",
+    "display_sha256": "cabd7176cf206885ebda1919ce632e25c67402388900d3116293e2024932f865",
+    "crop_box": {
+      "x": 0,
+      "y": 420,
+      "width": 1706,
+      "height": 859
+    }
   },
   {
     "id": 12,
@@ -37,7 +61,15 @@
     "original_filename": "fdac2621e4059849f90042586ec4df1e.jpg",
     "sha256": "207a7c96997ac20ee8ba02655147a4b194eaa63009139b0ed66bbf1909d31d0c",
     "width": 1706,
-    "height": 1279
+    "height": 1279,
+    "display_file": "docs/gallery/display/real-people/display-12.png",
+    "display_sha256": "4fb2d0484c1585c60eb9c153a08de8a081f81338a72bec53aeb5a66b8598e86d",
+    "crop_box": {
+      "x": 0,
+      "y": 410,
+      "width": 1706,
+      "height": 869
+    }
   },
   {
     "id": 9,
@@ -47,7 +79,15 @@
     "original_filename": "ad8e41d6f2d5b5472eeee07123e5a7bd.jpg",
     "sha256": "0ab58746c2cca4ecafab8f0e7f89d42f08e008f048ec806ba1b9aa464590b90b",
     "width": 1706,
-    "height": 1279
+    "height": 1279,
+    "display_file": "docs/gallery/display/real-people/display-09.png",
+    "display_sha256": "ecfa52285e97065d28fc2df91619d3a10b2d08a422f366e07ef06eded413bbba",
+    "crop_box": {
+      "x": 0,
+      "y": 415,
+      "width": 1706,
+      "height": 864
+    }
   },
   {
     "id": 3,
@@ -57,7 +97,15 @@
     "original_filename": "4681ce9eed3aabab6501dc217c046d8e.jpg",
     "sha256": "af23ab5febb0611e7364dc6eaeee8602d12bdcddfdcc70d5bae337fe4943f445",
     "width": 1706,
-    "height": 1279
+    "height": 1279,
+    "display_file": "docs/gallery/display/phone-portraits/display-03.png",
+    "display_sha256": "f01c61e94896069bc4f6539f806d6348cd5ac301fd2cfa0c5268c4a9293c10a1",
+    "crop_box": {
+      "x": 0,
+      "y": 320,
+      "width": 1706,
+      "height": 959
+    }
   },
   {
     "id": 4,
@@ -67,7 +115,15 @@
     "original_filename": "51aaeeb65b448f5e588a56391c3537af.jpg",
     "sha256": "1642292dc7bd82a87129ef5c1213fabe0b47af8d51967552ab544e6ffc7f0da0",
     "width": 1706,
-    "height": 1279
+    "height": 1279,
+    "display_file": "docs/gallery/display/phone-portraits/display-04.png",
+    "display_sha256": "95b930c7a0653cd1554f614cff7f351b3f77761cbbb0ebd66441c722785a0528",
+    "crop_box": {
+      "x": 0,
+      "y": 435,
+      "width": 1706,
+      "height": 844
+    }
   },
   {
     "id": 1,
@@ -77,7 +133,15 @@
     "original_filename": "23146a94395cf5c81c69a0aa04d0b9a6.jpg",
     "sha256": "2295f5684f1772091350d8e115fade263ce363fbdb1a56ef58d50d4ce8ba6449",
     "width": 1706,
-    "height": 1279
+    "height": 1279,
+    "display_file": "docs/gallery/display/phone-portraits/display-01.png",
+    "display_sha256": "e3acb4b9fd63c8866d6cdad1bf7e9b375e5927e27ccdc242d460248f3cf87a84",
+    "crop_box": {
+      "x": 0,
+      "y": 430,
+      "width": 1706,
+      "height": 849
+    }
   },
   {
     "id": 6,
@@ -87,7 +151,15 @@
     "original_filename": "b19a58dbd639b12778d1ecc981fd0558.jpg",
     "sha256": "ff8913117df96c324315832dd27203afd063ef7038e6491cbd2868254ff447e4",
     "width": 1706,
-    "height": 1279
+    "height": 1279,
+    "display_file": "docs/gallery/display/phone-portraits/display-06.png",
+    "display_sha256": "01532605ff26aeda7a7b5ed4fd51626bac416699c062af130b907c897b273a95",
+    "crop_box": {
+      "x": 0,
+      "y": 450,
+      "width": 1706,
+      "height": 829
+    }
   },
   {
     "id": 7,
@@ -97,7 +169,15 @@
     "original_filename": "e0553e2b881d5570606bdc421b7ad3e5.jpg",
     "sha256": "3071073433d8290e335d462ce55b1b906f530502db18589c7810dafc839f3839",
     "width": 1706,
-    "height": 1279
+    "height": 1279,
+    "display_file": "docs/gallery/display/phone-portraits/display-07.png",
+    "display_sha256": "2f7329315b3ccab44dcafe024eb2d7c9f6f3e4a029f535fe0450adecb60c481b",
+    "crop_box": {
+      "x": 0,
+      "y": 430,
+      "width": 1706,
+      "height": 849
+    }
   },
   {
     "id": 2,
@@ -107,7 +187,15 @@
     "original_filename": "3e5cee02a2f72bab14bb168590677cc4.jpg",
     "sha256": "0d3e09a203e1b75502483dba2d6dab5b7da10c5ffc9aa55cebd635bcd154e339",
     "width": 1706,
-    "height": 1279
+    "height": 1279,
+    "display_file": "docs/gallery/display/phone-portraits/display-02.png",
+    "display_sha256": "1e3e451af2b1f3a066a08674616c53b83ca0354fb4c91deb53f7c0c471f002a0",
+    "crop_box": {
+      "x": 0,
+      "y": 420,
+      "width": 1706,
+      "height": 859
+    }
   },
   {
     "id": 5,
@@ -117,7 +205,15 @@
     "original_filename": "ade45e7cc81b69fe389bd4417b98cd6b.jpg",
     "sha256": "1c90f16d5d9489e8f30125a9a56eed2749734abab6b58c08e0472bed7986b8ce",
     "width": 1706,
-    "height": 1279
+    "height": 1279,
+    "display_file": "docs/gallery/display/phone-portraits/display-05.png",
+    "display_sha256": "5e714a5c227678f3f499afe9e3f5142a82dcf73cb93e19bb02bf14d70dddae7a",
+    "crop_box": {
+      "x": 0,
+      "y": 400,
+      "width": 1706,
+      "height": 879
+    }
   },
   {
     "id": 13,
@@ -127,7 +223,15 @@
     "original_filename": "563f4b8d397c33dee8a8dcb1ae46dc92.jpg",
     "sha256": "9de01eac3e5c8720e714b9ddea7285a3c3a44f4e7ddc8b53986c83fd53d39d68",
     "width": 1706,
-    "height": 1279
+    "height": 1279,
+    "display_file": "docs/gallery/display/landscapes/display-13.png",
+    "display_sha256": "3b08f4e07a667f30922920d44862a4fae6b1b794f2e3597b9a43d7a035a186d4",
+    "crop_box": {
+      "x": 0,
+      "y": 420,
+      "width": 1706,
+      "height": 859
+    }
   },
   {
     "id": 15,
@@ -137,7 +241,15 @@
     "original_filename": "cea8c51026f777dfab2b089cda593ee9.jpg",
     "sha256": "0cd9cb869d6ddb2dd0f7599baa6e42a1a70b41249e1eb61ee04a37e43fa565bb",
     "width": 1706,
-    "height": 1279
+    "height": 1279,
+    "display_file": "docs/gallery/display/landscapes/display-15.png",
+    "display_sha256": "13dc126af93f17c54890800b9c982c418651cd1fd5ae70a844bb38d36f385a4d",
+    "crop_box": {
+      "x": 0,
+      "y": 440,
+      "width": 1706,
+      "height": 839
+    }
   },
   {
     "id": 14,
@@ -147,6 +259,14 @@
     "original_filename": "bab95b5f998fe661a6a1436e91fd2527.jpg",
     "sha256": "ae7ea87ea13e37d2a35a55a025407ac163bf6599441b5201586816fc67821df1",
     "width": 1706,
-    "height": 1279
+    "height": 1279,
+    "display_file": "docs/gallery/display/landscapes/display-14.png",
+    "display_sha256": "4bf9069f96c7309831c7810a4f083f4ee52abbcb6b6e055fbdd4e273b6d4c6fe",
+    "crop_box": {
+      "x": 0,
+      "y": 430,
+      "width": 1706,
+      "height": 849
+    }
   }
 ]

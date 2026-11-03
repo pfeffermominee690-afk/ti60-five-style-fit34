@@ -4,7 +4,7 @@
 
 ## 实机效果
 
-摄像头采集、FPGA 风格化、HDMI 输出。以下 15 张实拍按场景分组，每张均保留屏幕上的原图、风格结果和名称；点击图片可查看原照。
+摄像头采集、FPGA 风格化、HDMI 输出。以下 15 张实拍按场景分组，展示副本裁去屏幕上方的面板留白，保留完整屏幕、原图对照和风格名称；点击图片可查看未裁剪原照。
 
 [现实人物 · 5 张](#现实人物) · [手机人物 · 7 张](#手机人物) · [风景 · 3 张](#风景)
 
@@ -15,25 +15,25 @@
 <table>
 <tr>
 <td width="50%" align="center" valign="middle" rowspan="2">
-<a href="docs/gallery/originals/real-people/display-10.jpg"><img src="docs/gallery/originals/real-people/display-10.jpg" alt="木刻：显示屏左侧原图与右侧风格化结果" width="100%"></a><br>
+<a href="docs/gallery/originals/real-people/display-10.jpg"><img src="docs/gallery/display/real-people/display-10.png" alt="木刻：显示屏左侧原图与右侧风格化结果" width="100%"></a><br>
 <strong>木刻</strong>
 </td>
 <td width="25%" align="center" valign="middle">
-<a href="docs/gallery/originals/real-people/display-11.jpg"><img src="docs/gallery/originals/real-people/display-11.jpg" alt="点彩：显示屏左侧原图与右侧风格化结果" width="100%"></a><br>
+<a href="docs/gallery/originals/real-people/display-11.jpg"><img src="docs/gallery/display/real-people/display-11.png" alt="点彩：显示屏左侧原图与右侧风格化结果" width="100%"></a><br>
 <strong>点彩</strong>
 </td>
 <td width="25%" align="center" valign="middle">
-<a href="docs/gallery/originals/real-people/display-08.jpg"><img src="docs/gallery/originals/real-people/display-08.jpg" alt="排线速写：显示屏左侧原图与右侧风格化结果" width="100%"></a><br>
+<a href="docs/gallery/originals/real-people/display-08.jpg"><img src="docs/gallery/display/real-people/display-08.png" alt="排线速写：显示屏左侧原图与右侧风格化结果" width="100%"></a><br>
 <strong>排线速写</strong>
 </td>
 </tr>
 <tr>
 <td width="25%" align="center" valign="middle">
-<a href="docs/gallery/originals/real-people/display-12.jpg"><img src="docs/gallery/originals/real-people/display-12.jpg" alt="鲜明色彩：显示屏左侧原图与右侧风格化结果" width="100%"></a><br>
+<a href="docs/gallery/originals/real-people/display-12.jpg"><img src="docs/gallery/display/real-people/display-12.png" alt="鲜明色彩：显示屏左侧原图与右侧风格化结果" width="100%"></a><br>
 <strong>鲜明色彩</strong>
 </td>
 <td width="25%" align="center" valign="middle">
-<a href="docs/gallery/originals/real-people/display-09.jpg"><img src="docs/gallery/originals/real-people/display-09.jpg" alt="蓝黄笔触：显示屏左侧原图与右侧风格化结果" width="100%"></a><br>
+<a href="docs/gallery/originals/real-people/display-09.jpg"><img src="docs/gallery/display/real-people/display-09.png" alt="蓝黄笔触：显示屏左侧原图与右侧风格化结果" width="100%"></a><br>
 <strong>蓝黄笔触</strong>
 </td>
 </tr>
@@ -45,36 +45,38 @@
 
 <table>
 <tr>
-<td width="50%" align="center" valign="middle" rowspan="3">
-<a href="docs/gallery/originals/phone-portraits/display-03.jpg"><img src="docs/gallery/originals/phone-portraits/display-03.jpg" alt="木刻 · 人物近景：显示屏左侧原图与右侧风格化结果" width="100%"></a><br>
-<strong>木刻 · 人物近景</strong>
+<td width="100%" align="center" valign="middle" colspan="2">
+<a href="docs/gallery/originals/phone-portraits/display-02.jpg"><img src="docs/gallery/display/phone-portraits/display-02.png" alt="木刻 · 横屏画面" width="100%"></a><br>
+<strong>木刻 · 横屏画面</strong>
 </td>
-<td width="25%" align="center" valign="middle">
-<a href="docs/gallery/originals/phone-portraits/display-04.jpg"><img src="docs/gallery/originals/phone-portraits/display-04.jpg" alt="点彩：显示屏左侧原图与右侧风格化结果" width="100%"></a><br>
+</tr>
+<tr>
+<td width="50%" align="center" valign="middle">
+<a href="docs/gallery/originals/phone-portraits/display-04.jpg"><img src="docs/gallery/display/phone-portraits/display-04.png" alt="点彩" width="100%"></a><br>
 <strong>点彩</strong>
 </td>
-<td width="25%" align="center" valign="middle">
-<a href="docs/gallery/originals/phone-portraits/display-01.jpg"><img src="docs/gallery/originals/phone-portraits/display-01.jpg" alt="排线速写：显示屏左侧原图与右侧风格化结果" width="100%"></a><br>
+<td width="50%" align="center" valign="middle">
+<a href="docs/gallery/originals/phone-portraits/display-01.jpg"><img src="docs/gallery/display/phone-portraits/display-01.png" alt="排线速写" width="100%"></a><br>
 <strong>排线速写</strong>
 </td>
 </tr>
 <tr>
-<td width="25%" align="center" valign="middle">
-<a href="docs/gallery/originals/phone-portraits/display-06.jpg"><img src="docs/gallery/originals/phone-portraits/display-06.jpg" alt="鲜明色彩：显示屏左侧原图与右侧风格化结果" width="100%"></a><br>
+<td width="50%" align="center" valign="middle">
+<a href="docs/gallery/originals/phone-portraits/display-06.jpg"><img src="docs/gallery/display/phone-portraits/display-06.png" alt="鲜明色彩" width="100%"></a><br>
 <strong>鲜明色彩</strong>
 </td>
-<td width="25%" align="center" valign="middle">
-<a href="docs/gallery/originals/phone-portraits/display-07.jpg"><img src="docs/gallery/originals/phone-portraits/display-07.jpg" alt="蓝黄笔触：显示屏左侧原图与右侧风格化结果" width="100%"></a><br>
+<td width="50%" align="center" valign="middle">
+<a href="docs/gallery/originals/phone-portraits/display-07.jpg"><img src="docs/gallery/display/phone-portraits/display-07.png" alt="蓝黄笔触" width="100%"></a><br>
 <strong>蓝黄笔触</strong>
 </td>
 </tr>
 <tr>
-<td width="25%" align="center" valign="middle">
-<a href="docs/gallery/originals/phone-portraits/display-02.jpg"><img src="docs/gallery/originals/phone-portraits/display-02.jpg" alt="木刻 · 横屏画面：显示屏左侧原图与右侧风格化结果" width="100%"></a><br>
-<strong>木刻 · 横屏画面</strong>
+<td width="50%" align="center" valign="middle">
+<a href="docs/gallery/originals/phone-portraits/display-03.jpg"><img src="docs/gallery/display/phone-portraits/display-03.png" alt="木刻 · 人物近景" width="100%"></a><br>
+<strong>木刻 · 人物近景</strong>
 </td>
-<td width="25%" align="center" valign="middle">
-<a href="docs/gallery/originals/phone-portraits/display-05.jpg"><img src="docs/gallery/originals/phone-portraits/display-05.jpg" alt="木刻 · 不同构图：显示屏左侧原图与右侧风格化结果" width="100%"></a><br>
+<td width="50%" align="center" valign="middle">
+<a href="docs/gallery/originals/phone-portraits/display-05.jpg"><img src="docs/gallery/display/phone-portraits/display-05.png" alt="木刻 · 不同构图" width="100%"></a><br>
 <strong>木刻 · 不同构图</strong>
 </td>
 </tr>
@@ -87,23 +89,69 @@
 <table>
 <tr>
 <td width="67%" align="center" valign="middle" rowspan="2">
-<a href="docs/gallery/originals/landscapes/display-13.jpg"><img src="docs/gallery/originals/landscapes/display-13.jpg" alt="蓝黄笔触 · 山景：显示屏左侧原图与右侧风格化结果" width="100%"></a><br>
+<a href="docs/gallery/originals/landscapes/display-13.jpg"><img src="docs/gallery/display/landscapes/display-13.png" alt="蓝黄笔触 · 山景：显示屏左侧原图与右侧风格化结果" width="100%"></a><br>
 <strong>蓝黄笔触 · 山景</strong>
 </td>
 <td width="33%" align="center" valign="middle">
-<a href="docs/gallery/originals/landscapes/display-15.jpg"><img src="docs/gallery/originals/landscapes/display-15.jpg" alt="蓝黄笔触 · 树林：显示屏左侧原图与右侧风格化结果" width="100%"></a><br>
+<a href="docs/gallery/originals/landscapes/display-15.jpg"><img src="docs/gallery/display/landscapes/display-15.png" alt="蓝黄笔触 · 树林：显示屏左侧原图与右侧风格化结果" width="100%"></a><br>
 <strong>蓝黄笔触 · 树林</strong>
 </td>
 </tr>
 <tr>
 <td width="33%" align="center" valign="middle">
-<a href="docs/gallery/originals/landscapes/display-14.jpg"><img src="docs/gallery/originals/landscapes/display-14.jpg" alt="排线速写：显示屏左侧原图与右侧风格化结果" width="100%"></a><br>
+<a href="docs/gallery/originals/landscapes/display-14.jpg"><img src="docs/gallery/display/landscapes/display-14.png" alt="排线速写：显示屏左侧原图与右侧风格化结果" width="100%"></a><br>
 <strong>排线速写</strong>
 </td>
 </tr>
 </table>
 
 [浏览全部原始照片与分组索引](docs/gallery/README.md)
+
+## 外壳与机械设计
+
+两套外壳均由团队自主建模并采用 3D 打印制作。第一套将摄像头与屏幕布置在同侧；第二套将摄像头与屏幕分置两面。外壳使用 ABS、PLA Basic、PETG 等材料，整机由充电宝供电。
+
+### 两套实物
+
+<table>
+<tr>
+<td width="50%" align="center" valign="middle">
+<a href="docs/enclosures/originals/same-side/A01.jpg"><img src="docs/enclosures/originals/same-side/A01.jpg" alt="第一套 · 整机外观" width="100%"></a><br>
+<strong>第一套 · 整机外观</strong>
+</td>
+<td width="50%" align="center" valign="middle">
+<a href="docs/enclosures/originals/opposite-side/B02.jpg"><img src="docs/enclosures/originals/opposite-side/B02.jpg" alt="第二套 · 屏幕面外观" width="100%"></a><br>
+<strong>第二套 · 屏幕面外观</strong>
+</td>
+</tr>
+</table>
+
+### 三维装配与分解图
+
+<table>
+<tr>
+<td width="50%" align="center" valign="middle">
+<a href="docs/enclosures/originals/same-side/A02.png"><img src="docs/enclosures/originals/same-side/A02.png" alt="第一套 · 整体装配模型" width="100%"></a><br>
+<strong>第一套 · 整体装配模型</strong>
+</td>
+<td width="50%" align="center" valign="middle">
+<a href="docs/enclosures/originals/same-side/A09.png"><img src="docs/enclosures/originals/same-side/A09.png" alt="第一套 · 分解模型" width="100%"></a><br>
+<strong>第一套 · 分解模型</strong>
+</td>
+</tr>
+<tr>
+<td width="50%" align="center" valign="middle">
+<a href="docs/enclosures/originals/opposite-side/B07.png"><img src="docs/enclosures/originals/opposite-side/B07.png" alt="第二套 · 整体装配模型" width="100%"></a><br>
+<strong>第二套 · 整体装配模型</strong>
+</td>
+<td width="50%" align="center" valign="middle">
+<a href="docs/enclosures/originals/opposite-side/B05.png"><img src="docs/enclosures/originals/opposite-side/B05.png" alt="第二套 · 分解模型" width="100%"></a><br>
+<strong>第二套 · 分解模型</strong>
+</td>
+</tr>
+</table>
+
+[查看全部 12 张实物照片与 4 张机械设计图](docs/enclosures/README.md)
 
 ## 功能与工程入口
 
