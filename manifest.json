@@ -1,9 +1,9 @@
 {
-  "version": "complete-submission-20261103-r2",
+  "version": "complete-submission-20261103-gallery",
   "files": {
     ".gitattributes": "c8ea2777b83197748821c009c494a298ac555caca3e3a174a5963682bdf56ca9",
     ".gitignore": "3f80d8a76f26295b6748fef4fb62505b91bc92d3fcace758406fe57504bf5a6d",
-    "README.md": "c70c76fb9174eaa25ed9e6b42f3d22faa5324ff83cc7c63fe65b75f2f47729d7",
+    "README.md": "ee87bd4f214d3dc0f8ee4df1391af8c7839e160975a7dcd113c506c0cb365d16",
     "autoboot/README.md": "585d7032a076e689e15b550899b27369c26ee93ed0032c381d1aab55dcb63f7e",
     "autoboot/firmware/network_autoboot.c": "028d3e3d870cf0007853112dd62540d73caf016ebb1f48e53f60111bf41c9626",
     "autoboot/flash.py": "dd4d94ff8e7af46d09b81d935b2c680980398477000c4f866f6e824caed7a046",
@@ -958,6 +958,23 @@
     "tools/export_models.py": "08040b05af5181f4ae25bbe0ec5c5c1b86f93d5bb97e63e3ac5600edb01e21c3",
     "tools/generate_fonts.py": "cf81586908d1c4ffe1e98f2d4463e4ea3d639bcccae0f04a5a8e7988fb19967e",
     "tools/sketch_compatibility.py": "27060e8381e638c16e735be025c874a031e89e26333128f91853c461386503b9",
-    "tools/verify.py": "1ad8d87ef0b8d14796901b1aea6b871183a98e0ee6fcacd5eda0af838eb55980"
+    "tools/verify.py": "1ad8d87ef0b8d14796901b1aea6b871183a98e0ee6fcacd5eda0af838eb55980",
+    "docs/gallery/index.json": "944d295d120e5beb30031e1bfb8b37df84528885547d36569823eebba4cfe8b9",
+    "docs/gallery/README.md": "de03986aa286a67104a084120bbb6c212ab96552ea8b907f27d0140275d7c1fc",
+    "docs/gallery/originals/landscapes/display-13.jpg": "9de01eac3e5c8720e714b9ddea7285a3c3a44f4e7ddc8b53986c83fd53d39d68",
+    "docs/gallery/originals/landscapes/display-14.jpg": "ae7ea87ea13e37d2a35a55a025407ac163bf6599441b5201586816fc67821df1",
+    "docs/gallery/originals/landscapes/display-15.jpg": "0cd9cb869d6ddb2dd0f7599baa6e42a1a70b41249e1eb61ee04a37e43fa565bb",
+    "docs/gallery/originals/phone-portraits/display-01.jpg": "2295f5684f1772091350d8e115fade263ce363fbdb1a56ef58d50d4ce8ba6449",
+    "docs/gallery/originals/phone-portraits/display-02.jpg": "0d3e09a203e1b75502483dba2d6dab5b7da10c5ffc9aa55cebd635bcd154e339",
+    "docs/gallery/originals/phone-portraits/display-03.jpg": "af23ab5febb0611e7364dc6eaeee8602d12bdcddfdcc70d5bae337fe4943f445",
+    "docs/gallery/originals/phone-portraits/display-04.jpg": "1642292dc7bd82a87129ef5c1213fabe0b47af8d51967552ab544e6ffc7f0da0",
+    "docs/gallery/originals/phone-portraits/display-05.jpg": "1c90f16d5d9489e8f30125a9a56eed2749734abab6b58c08e0472bed7986b8ce",
+    "docs/gallery/originals/phone-portraits/display-06.jpg": "ff8913117df96c324315832dd27203afd063ef7038e6491cbd2868254ff447e4",
+    "docs/gallery/originals/phone-portraits/display-07.jpg": "3071073433d8290e335d462ce55b1b906f530502db18589c7810dafc839f3839",
+    "docs/gallery/originals/real-people/display-08.jpg": "4d2c86ac6b351089897a127cecc07aa568a95ec5ea6e022c6cce702e09250ed6",
+    "docs/gallery/originals/real-people/display-09.jpg": "0ab58746c2cca4ecafab8f0e7f89d42f08e008f048ec806ba1b9aa464590b90b",
+    "docs/gallery/originals/real-people/display-10.jpg": "d3b465b35bdf1c836a37f483e4d83a608a748693de87e122c7ee8d196c360afd",
+    "docs/gallery/originals/real-people/display-11.jpg": "89d213f52c9833210b2a87c733f5dce5dc57044009050fc5e60497d5b5a1ab9a",
+    "docs/gallery/originals/real-people/display-12.jpg": "207a7c96997ac20ee8ba02655147a4b194eaa63009139b0ed66bbf1909d31d0c"
   }
 }

@@ -2,6 +2,109 @@
 
 本项目运行于 Ti60F225 开发板，使用 SC431HAI CSI 摄像头采集图像，经 FPGA 处理后输出至 HDMI 显示屏。工程包含五种神经网络风格、独立 Sobel 线条 Demo，以及从板载 Flash 加载程序和模型的开机自启动实现。
 
+## 实机效果
+
+摄像头采集、FPGA 风格化、HDMI 输出。以下 15 张实拍按场景分组，每张均保留屏幕上的原图、风格结果和名称；点击图片可查看原照。
+
+[现实人物 · 5 张](#现实人物) · [手机人物 · 7 张](#手机人物) · [风景 · 3 张](#风景)
+
+### 现实人物
+
+同一室内场景，呈现五种风格下的人物、衣物与背景。
+
+<table>
+<tr>
+<td width="50%" align="center" valign="middle" rowspan="2">
+<a href="docs/gallery/originals/real-people/display-10.jpg"><img src="docs/gallery/originals/real-people/display-10.jpg" alt="木刻：显示屏左侧原图与右侧风格化结果" width="100%"></a><br>
+<strong>木刻</strong>
+</td>
+<td width="25%" align="center" valign="middle">
+<a href="docs/gallery/originals/real-people/display-11.jpg"><img src="docs/gallery/originals/real-people/display-11.jpg" alt="点彩：显示屏左侧原图与右侧风格化结果" width="100%"></a><br>
+<strong>点彩</strong>
+</td>
+<td width="25%" align="center" valign="middle">
+<a href="docs/gallery/originals/real-people/display-08.jpg"><img src="docs/gallery/originals/real-people/display-08.jpg" alt="排线速写：显示屏左侧原图与右侧风格化结果" width="100%"></a><br>
+<strong>排线速写</strong>
+</td>
+</tr>
+<tr>
+<td width="25%" align="center" valign="middle">
+<a href="docs/gallery/originals/real-people/display-12.jpg"><img src="docs/gallery/originals/real-people/display-12.jpg" alt="鲜明色彩：显示屏左侧原图与右侧风格化结果" width="100%"></a><br>
+<strong>鲜明色彩</strong>
+</td>
+<td width="25%" align="center" valign="middle">
+<a href="docs/gallery/originals/real-people/display-09.jpg"><img src="docs/gallery/originals/real-people/display-09.jpg" alt="蓝黄笔触：显示屏左侧原图与右侧风格化结果" width="100%"></a><br>
+<strong>蓝黄笔触</strong>
+</td>
+</tr>
+</table>
+
+### 手机人物
+
+以手机中的人物画面作为拍摄对象，展示五种风格及不同构图下的木刻效果。
+
+<table>
+<tr>
+<td width="50%" align="center" valign="middle" rowspan="3">
+<a href="docs/gallery/originals/phone-portraits/display-03.jpg"><img src="docs/gallery/originals/phone-portraits/display-03.jpg" alt="木刻 · 人物近景：显示屏左侧原图与右侧风格化结果" width="100%"></a><br>
+<strong>木刻 · 人物近景</strong>
+</td>
+<td width="25%" align="center" valign="middle">
+<a href="docs/gallery/originals/phone-portraits/display-04.jpg"><img src="docs/gallery/originals/phone-portraits/display-04.jpg" alt="点彩：显示屏左侧原图与右侧风格化结果" width="100%"></a><br>
+<strong>点彩</strong>
+</td>
+<td width="25%" align="center" valign="middle">
+<a href="docs/gallery/originals/phone-portraits/display-01.jpg"><img src="docs/gallery/originals/phone-portraits/display-01.jpg" alt="排线速写：显示屏左侧原图与右侧风格化结果" width="100%"></a><br>
+<strong>排线速写</strong>
+</td>
+</tr>
+<tr>
+<td width="25%" align="center" valign="middle">
+<a href="docs/gallery/originals/phone-portraits/display-06.jpg"><img src="docs/gallery/originals/phone-portraits/display-06.jpg" alt="鲜明色彩：显示屏左侧原图与右侧风格化结果" width="100%"></a><br>
+<strong>鲜明色彩</strong>
+</td>
+<td width="25%" align="center" valign="middle">
+<a href="docs/gallery/originals/phone-portraits/display-07.jpg"><img src="docs/gallery/originals/phone-portraits/display-07.jpg" alt="蓝黄笔触：显示屏左侧原图与右侧风格化结果" width="100%"></a><br>
+<strong>蓝黄笔触</strong>
+</td>
+</tr>
+<tr>
+<td width="25%" align="center" valign="middle">
+<a href="docs/gallery/originals/phone-portraits/display-02.jpg"><img src="docs/gallery/originals/phone-portraits/display-02.jpg" alt="木刻 · 横屏画面：显示屏左侧原图与右侧风格化结果" width="100%"></a><br>
+<strong>木刻 · 横屏画面</strong>
+</td>
+<td width="25%" align="center" valign="middle">
+<a href="docs/gallery/originals/phone-portraits/display-05.jpg"><img src="docs/gallery/originals/phone-portraits/display-05.jpg" alt="木刻 · 不同构图：显示屏左侧原图与右侧风格化结果" width="100%"></a><br>
+<strong>木刻 · 不同构图</strong>
+</td>
+</tr>
+</table>
+
+### 风景
+
+山体与树林的色彩、纹理和轮廓，在蓝黄笔触与排线速写中呈现不同效果。
+
+<table>
+<tr>
+<td width="67%" align="center" valign="middle" rowspan="2">
+<a href="docs/gallery/originals/landscapes/display-13.jpg"><img src="docs/gallery/originals/landscapes/display-13.jpg" alt="蓝黄笔触 · 山景：显示屏左侧原图与右侧风格化结果" width="100%"></a><br>
+<strong>蓝黄笔触 · 山景</strong>
+</td>
+<td width="33%" align="center" valign="middle">
+<a href="docs/gallery/originals/landscapes/display-15.jpg"><img src="docs/gallery/originals/landscapes/display-15.jpg" alt="蓝黄笔触 · 树林：显示屏左侧原图与右侧风格化结果" width="100%"></a><br>
+<strong>蓝黄笔触 · 树林</strong>
+</td>
+</tr>
+<tr>
+<td width="33%" align="center" valign="middle">
+<a href="docs/gallery/originals/landscapes/display-14.jpg"><img src="docs/gallery/originals/landscapes/display-14.jpg" alt="排线速写：显示屏左侧原图与右侧风格化结果" width="100%"></a><br>
+<strong>排线速写</strong>
+</td>
+</tr>
+</table>
+
+[浏览全部原始照片与分组索引](docs/gallery/README.md)
+
 ## 功能与工程入口
 
 | 工程 | 功能 | 源码目录 | 加载命令 |
