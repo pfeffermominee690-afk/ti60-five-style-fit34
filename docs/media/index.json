@@ -1,0 +1,22 @@
+{
+  "title": "手势切换演示",
+  "duration_seconds": 14.2,
+  "original_filename": "4434866f8cb13ae1896572c3b729a501.mp4",
+  "files": [
+    {
+      "file": "docs/media/originals/gesture-switch.mp4",
+      "kind": "original",
+      "sha256": "17fdbd9b89758876a470ff6a2b684a9d1b49e7c753383c817c1df5d9d6ea14e0"
+    },
+    {
+      "file": "docs/media/gesture-switch.mp4",
+      "kind": "h264-video",
+      "sha256": "41cd768e969bc5929c424f50a840bde8e1c0da571c2af09e1a7607588a36a74d"
+    },
+    {
+      "file": "docs/media/gesture-switch.gif",
+      "kind": "animated-preview",
+      "sha256": "e8c43ec45015ba7513cbebded601fc355a1becc2d178c423d1d0a5a1f5f28401"
+    }
+  ]
+}

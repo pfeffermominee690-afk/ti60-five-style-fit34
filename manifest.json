@@ -1,9 +1,9 @@
 {
-  "version": "complete-submission-20261103-enclosure-camera-layouts",
+  "version": "complete-submission-20261103-gesture-video",
   "files": {
     ".gitattributes": "c8ea2777b83197748821c009c494a298ac555caca3e3a174a5963682bdf56ca9",
     ".gitignore": "3f80d8a76f26295b6748fef4fb62505b91bc92d3fcace758406fe57504bf5a6d",
-    "README.md": "059e479831bb2bacbd2ff085185fe557628a8853b578aa3aa1c530b4db7a8d2a",
+    "README.md": "0620d313df9b2d11292f8b8c4778cb8aca2b6bd8d2fff7b0439bf94aff194318",
     "autoboot/README.md": "585d7032a076e689e15b550899b27369c26ee93ed0032c381d1aab55dcb63f7e",
     "autoboot/firmware/network_autoboot.c": "028d3e3d870cf0007853112dd62540d73caf016ebb1f48e53f60111bf41c9626",
     "autoboot/flash.py": "dd4d94ff8e7af46d09b81d935b2c680980398477000c4f866f6e824caed7a046",
@@ -350,6 +350,10 @@
     "docs/gallery/originals/real-people/display-10.jpg": "d3b465b35bdf1c836a37f483e4d83a608a748693de87e122c7ee8d196c360afd",
     "docs/gallery/originals/real-people/display-11.jpg": "89d213f52c9833210b2a87c733f5dce5dc57044009050fc5e60497d5b5a1ab9a",
     "docs/gallery/originals/real-people/display-12.jpg": "207a7c96997ac20ee8ba02655147a4b194eaa63009139b0ed66bbf1909d31d0c",
+    "docs/media/gesture-switch.gif": "e8c43ec45015ba7513cbebded601fc355a1becc2d178c423d1d0a5a1f5f28401",
+    "docs/media/gesture-switch.mp4": "41cd768e969bc5929c424f50a840bde8e1c0da571c2af09e1a7607588a36a74d",
+    "docs/media/index.json": "537022f35d5885d7bd5c383347f37acb9eff17232f79e449dd3413cfae4e80db",
+    "docs/media/originals/gesture-switch.mp4": "17fdbd9b89758876a470ff6a2b684a9d1b49e7c753383c817c1df5d9d6ea14e0",
     "firmware/include/boot_flash.h": "13394ba5d4cdd89f14fc83079a969b73f3443b02dbb0cd8db1c5bed70b9a58d9",
     "firmware/include/boot_payload.h": "65ed881504eb88e1ec12b7cc15cc7854015bccbb0c5a1751051f01b6363989ba",
     "firmware/include/bsp_minimal.h": "50f93fd7c5cfff26367eb621df983e2faeec591afab2d4dfaf7f1f236cf263a1",
