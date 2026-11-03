@@ -2,6 +2,8 @@
 
 本项目运行于 Ti60F225 开发板，使用 SC431HAI CSI 摄像头采集图像，经 FPGA 处理后输出至 HDMI 显示屏。工程包含五种神经网络风格、独立 Sobel 线条 Demo，以及从板载 Flash 加载程序和模型的开机自启动实现。
 
+当前主工程为 **fit37**：保留 fit34 的 Bayer 彩点修正、自动曝光与色彩参数，将图像和 UI 整屏旋转 180°，适配屏幕安装方向。已通过真实 J4 摄像头及充电宝断电重启验证：自动出画面、方向正确、无蓝点、手势切换正常。版本与验证资料见 [fit37 说明](docs/validation/fit37/README.md)，历史版本见 [fit34 恢复材料](recovery/fit34/README.md)。
+
 ## 实机效果
 
 摄像头采集、FPGA 风格化、HDMI 输出。以下 15 张五风格实拍按场景分组，展示副本裁去屏幕上方的面板留白，保留完整屏幕、原图对照和风格名称；点击图片可查看未裁剪原照。
@@ -195,13 +197,13 @@
 
 | 工程 | 功能 | 源码目录 | 加载命令 |
 |---|---|---|---|
-| 五风格主工程（fit34） | 原图／风格图左右对照，手势切换，Bayer 彩点修正与自动曝光 | `fpga/`、`firmware/` | `./load.ps1 -Target main` |
+| 五风格主工程（fit37） | 原图／风格图对照，手势切换，Bayer 彩点修正、自动曝光与整屏 180° 旋转 | `fpga/`、`firmware/` | `./load.ps1 -Target main` |
 | 独立线条 Demo（Sobel v2） | 640×480 线条提取、原图旁路、单行信息显示 | `line-demo/` | `./load.ps1 -Target line` |
-| 五风格自启动工程（fit32） | 上电加载片内固件，从 Flash 读取模型并校验 CRC，然后运行摄像头与五风格处理 | `autoboot/` | `./load.ps1 -Target autoboot` |
+| 历史自启动工程（fit32） | 固定曝光，上电从 Flash 加载模型并校验 CRC | `autoboot/` | `./load.ps1 -Target autoboot` |
 
-主工程与自启动工程是两个独立构建：fit34 包含自动曝光，fit32 使用固定曝光。各自的位流、固件和源码对应关系由校验清单固定。`load.ps1` 用于 JTAG 运行；开机自启动的 Flash 烧录方法见 [自启动说明](autoboot/README.md)。
+fit37 的片内固件包含 Flash 模型加载与 CRC 校验，沿用 fit34 的自动曝光；`autoboot/` 保留 fit32 的独立历史工程。各版本的位流、固件和源码对应关系由校验清单固定。`load.ps1` 用于 JTAG 运行，`-Target fit34` 可恢复未旋转显示；fit37 与 fit32 的 Flash 烧录方法见 [自启动说明](autoboot/README.md)。
 
-屏幕右侧的五种风格名称及切换顺序为：**木刻 → 点彩 → 排线速写 → 鲜明色彩 → 蓝黄笔触**。左侧显示“原图”。在镜头前水平挥手可切换风格；保持摄像头固定，连续动作之间稍作停顿。模型对应关系见 [模型说明](models/README.md)。独立线条 Demo 显示 `LINE ART`，与五风格中的“排线速写”分别实现。
+屏幕上的五种风格名称及切换顺序为：**木刻 → 点彩 → 排线速写 → 鲜明色彩 → 蓝黄笔触**。“原图”用于并排对照。在镜头前水平挥手可切换风格；保持摄像头固定，连续动作之间稍作停顿。模型对应关系见 [模型说明](models/README.md)。独立线条 Demo 显示 `LINE ART`，与五风格中的“排线速写”分别实现。
 
 ## 硬件与开发环境
 
@@ -224,7 +226,7 @@ python tools/build_firmware.py --target line --update-ram
 ./build-fpga.ps1 -Target line
 ```
 
-目标名称统一为 `main`、`line`、`autoboot`。FPGA 输出位于相应工程的 `fpga/outflow/`；`prebuilt/` 保存配套参考文件。`load.ps1` 加载的是参考文件。工具安装位置不同，可指定 `-EfinityHome`、`-RiscvSdk` 或 `--toolchain`。
+编译目标为 `main`、`line`、`autoboot`。FPGA 输出位于相应工程的 `fpga/outflow/`；`prebuilt/` 保存配套参考文件。`load.ps1` 加载的是参考文件，并额外提供 `fit34` 恢复选项。工具安装位置不同，可指定 `-EfinityHome`、`-RiscvSdk` 或 `--toolchain`。
 
 ## 其他源码与验证
 

@@ -1,0 +1,13 @@
+{
+  "candidate": "fpga-fit37-display-rotate180",
+  "verified_at": "2026-11-03T17:17:57.6618571+08:00",
+  "physical_cold_boot_verified": true,
+  "power_source": "5 V USB power bank",
+  "camera": "CSI J4",
+  "automatic_dynamic_output": true,
+  "rotation_180_correct": true,
+  "blue_dots_absent": true,
+  "gesture_switching_works": true,
+  "verification_method": "User physical observation after power cycle",
+  "user_feedback": "自动出画面，方向正确、无蓝点，手势正常"
+}

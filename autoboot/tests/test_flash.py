@@ -17,6 +17,13 @@ class FlashTests(unittest.TestCase):
             self.assertEqual(flash.read_hex(Path(d)/'models.hex'),payload)
             self.assertEqual(flash.read_hex(Path(d)/'configuration.hex'),config)
         with self.assertRaises(ValueError):flash.make_payload(b'abc')
+    def test_fit37_configuration_keeps_shared_model_payload(self):
+        with tempfile.TemporaryDirectory() as d:
+            config,payload=flash.prepare(Path(d),'main')
+            self.assertEqual(config,flash.read_hex(flash.ROOT/'prebuilt/fit37.hex'))
+            self.assertNotEqual(config,flash.read_hex(flash.ROOT/'autoboot/prebuilt/autoboot.hex'))
+            self.assertEqual(payload,(flash.ROOT/'autoboot/prebuilt/models-flash.bin').read_bytes())
+            self.assertEqual(json.loads((Path(d)/'layout.json').read_text())['target'],'main')
     def test_program_backs_up_before_two_partition_writes(self):
         events=[];memory=bytearray(b'\xff'*flash.CAPACITY)
         class Fake:
@@ -26,9 +33,13 @@ class FlashTests(unittest.TestCase):
             def write(self,name,path,offset):
                 events.append((name,offset));data=flash.read_hex(path);memory[offset:offset+len(data)]=data
             def read(self,name,offset,length):events.append(name);return bytes(memory[offset:offset+length])
-            def run(self,*args):events.append('run')
-        with patch.object(flash,'Programmer',Fake),patch.object(flash.subprocess,'run'),patch.object(sys,'argv',['flash.py','program']):flash.main()
-        self.assertEqual(events,['connect','backup',('models-write',0x400000),('configuration-write',0),'configuration-readback','models-readback','run'])
+            def run(self,name,args,marker):events.append(('run',args[0]))
+        for target,bit in [('autoboot','autoboot/prebuilt/autoboot.bit'),('main','prebuilt/fit37.bit')]:
+            with self.subTest(target=target):
+                events.clear()
+                with patch.object(flash,'Programmer',Fake),patch.object(flash.subprocess,'run'),patch.object(sys,'argv',['flash.py','program','--target',target]):flash.main()
+                self.assertEqual(events,['connect','backup',('models-write',0x400000),('configuration-write',0),'configuration-readback','models-readback',('run',flash.ROOT/bit)])
+                self.assertEqual(memory[:len(flash.read_hex(flash.ROOT/flash.CONFIGURATIONS[target][0]))],flash.read_hex(flash.ROOT/flash.CONFIGURATIONS[target][0]))
     def test_invalid_restore_rejected_before_connect(self):
         with tempfile.TemporaryDirectory() as d:
             p=Path(d);(p/'backup.json').write_text(json.dumps({'bytes':flash.CAPACITY,'sha256':'0'*64}));(p/'flash-before.bin').write_bytes(b'bad')

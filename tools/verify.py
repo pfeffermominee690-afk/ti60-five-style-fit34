@@ -8,7 +8,7 @@ for n,h in manifest['files'].items():
  assert (R/n).is_file(), 'Missing '+n
  assert sha(R/n)==h, 'Hash mismatch '+n
 source_count=0;design_count=0
-for prefix,app,bitname in [('', 'network_camera','fit34'),('line-demo','capture_demo','line-demo'),('autoboot','network_autoboot','autoboot')]:
+for prefix,app,bitname in [('', 'network_camera','fit37'),('line-demo','capture_demo','line-demo'),('autoboot','network_autoboot','autoboot')]:
  base=R/prefix;review=json.loads((base/'source-manifest.json').read_text())
  for n,h in review['sources'].items():assert sha(base/'fpga'/n)==h,prefix+'/'+n
  assert sha(base/'prebuilt'/(bitname+'.bit'))==review['bit_sha256']
@@ -21,6 +21,13 @@ for prefix,app,bitname in [('', 'network_camera','fit34'),('line-demo','capture_
   for folder in ['fpga','fpga/ip/soc','fpga/ip/soc/source/hardware/netlist']:
    data=bytes(int(x,2) for x in (base/folder/name).read_text().split());assert data==binary[i::4],str(base/folder/name)
  source_count+=len(review['sources']);design_count+=len(designs)
+recovery=R/'recovery/fit34'
+old_review=json.loads((recovery/'source-manifest.json').read_text())
+for n,h in old_review['sources'].items():
+ archived=recovery/'fpga'/n
+ assert sha(archived if archived.is_file() else R/'fpga'/n)==h,'fit34/'+n
+assert sha(R/'prebuilt/fit34.bit')==old_review['bit_sha256']
+assert sha(R/'prebuilt/network_camera.elf')==old_review['elf_sha256']
 model_meta=json.loads((R/'models/models-five-fit24-compat.json').read_text())
 model=(R/'models/models-five-fit24-compat.bin').read_bytes()
 assert hashlib.sha256(model).hexdigest()==model_meta['sha256']
@@ -36,4 +43,4 @@ expected=[(v>>(127-x))&1 for v in rows for x in range(128)]+[0]*(16384-len(rows)
 for prefix in ['', 'autoboot']:
  actual=[int(v,16) for v in (R/prefix/'fpga/title-font.hex').read_text().split()]
  assert actual==expected, 'OSD font mismatch'
-print(f"PASS: {len(manifest['files'])} file hashes; 3 complete projects; {source_count} source hashes; {design_count} project inputs; firmware RAM; model payload; OSD labels.")
+print(f"PASS: {len(manifest['files'])} file hashes; 3 complete projects; fit34 recovery overlay; {source_count} source hashes; {design_count} project inputs; firmware RAM; model payload; OSD labels.")

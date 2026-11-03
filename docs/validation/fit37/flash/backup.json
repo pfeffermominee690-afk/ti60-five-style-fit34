@@ -1,0 +1,10 @@
+{
+  "bytes": 8388608,
+  "sha256": "c76366444b2cddf89cb495c8d1283866db2fadf9e4a90e97a867a54f15842529",
+  "timestamp": 1793696860.3500752,
+  "old_config": "fit32",
+  "old_config_bytes": 1059686,
+  "old_config_sha256": "666b72a38a0b2972d8ea076d203e2c23d24dff5a225419a0a0af4774295d6da2",
+  "model_payload_verified": true,
+  "new_config_bytes": 1055701
+}

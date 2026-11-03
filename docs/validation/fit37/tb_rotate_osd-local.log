@@ -1,0 +1,7 @@
+PASS style 1: all 921600 pixels; exact 180-degree overlay; original behavior/timing unchanged
+PASS style 2: all 921600 pixels; exact 180-degree overlay; original behavior/timing unchanged
+PASS style 3: all 921600 pixels; exact 180-degree overlay; original behavior/timing unchanged
+PASS style 4: all 921600 pixels; exact 180-degree overlay; original behavior/timing unchanged
+PASS style 5: all 921600 pixels; exact 180-degree overlay; original behavior/timing unchanged
+PASS OSD rotation: 4608000 pixels, five Chinese labels, FPS digits/invalid state, DE/HS/VS preserved
+- tests/rotation/tb_rotate_osd.sv:78: Verilog $finish

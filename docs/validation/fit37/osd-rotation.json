@@ -1,0 +1,16 @@
+{
+  "module": "fps_osd",
+  "new_parameters": {
+    "ROTATE_180": 0,
+    "FRAME_WIDTH": 1280,
+    "FRAME_HEIGHT": 720
+  },
+  "reference_sha256": "d3ca58eba6ed2e40818c8357378ce01418a13b558e90b1ca5511a58df91ec044",
+  "candidate_sha256": "dba60bf0672549feadfb9e0e0df722c8b768afc64877c8a40bc16537dd3e44f7",
+  "passed": true,
+  "verified_pixels": 4608000,
+  "styles": 5,
+  "default_equivalent": true,
+  "timing_signals_equivalent": true,
+  "no_board_access": true
+}

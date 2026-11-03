@@ -1,0 +1,35 @@
+{
+  "candidate": "fit37",
+  "camera_input": "SC431HAI on J4",
+  "rotation_degrees": 180,
+  "bit_sha256": "8c5f204dde7a94f03ec3d51f21302559d46756b2838fb36004b19d32edfd8883",
+  "elf_sha256": "6edd857b6b9fc079bc5e082ae37b043f4d030b9117fa9c89957dedbe75520753",
+  "timing_pass": true,
+  "camera_runtime_verified": true,
+  "blue_dot_fix_confirmed": true,
+  "display_direction_confirmed": true,
+  "flash_written": true,
+  "full_flash_readback_verified": true,
+  "models_unchanged_verified": true,
+  "physical_cold_boot_verified": true,
+  "standalone_boot_verified": true,
+  "gesture_after_cold_boot_verified": true,
+  "hardware_evidence": [
+    "camera-runtime.json",
+    "camera-status.log",
+    "flash-persistence.json",
+    "cold-boot-user-confirmation.json",
+    "flash/programming-audit.json",
+    "flash/live-after-write.log"
+  ],
+  "local_checks": {
+    "firmware_binary_matches_reference": true,
+    "firmware_binary_sha256": "5f2e8ef4340aee334ebd0e584bae5a4a1144c0c64f0d50793e19b78023bb0cc7",
+    "baseline_tests_pass": true,
+    "rotation_tests_pass": true,
+    "flash_tool_mock_tests": 4
+  },
+  "legacy_recovery": "../../../recovery/fit34/README.md",
+  "osd_numeric_multiplier": 3,
+  "short_runtime_check_is_throughput_benchmark": false
+}

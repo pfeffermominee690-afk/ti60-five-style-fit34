@@ -1,0 +1,23 @@
+{
+  "timestamp": 1793697291.084313,
+  "candidate": "fpga-fit37-display-rotate180",
+  "bit_sha256": "8c5f204dde7a94f03ec3d51f21302559d46756b2838fb36004b19d32edfd8883",
+  "elf_sha256": "6edd857b6b9fc079bc5e082ae37b043f4d030b9117fa9c89957dedbe75520753",
+  "config_sha256": "fd358f37a401ec03a18a2c40b89fc2d6a8da36883c00068e71bc5d0fd40c8fe5",
+  "config_flash_bytes": 1055701,
+  "flash_written": true,
+  "config_verified": true,
+  "full_flash_readback": true,
+  "full_flash_sha256": "c30494c7c543f569f8298723bbddbab7556c204966d769bcfe8f3d7882081da5",
+  "models_unchanged_verified": true,
+  "outside_configuration_sectors_unchanged": true,
+  "erase_end": 1056768,
+  "flash_backup": "D:\\FPGA\\Ti60F225\\projects\\p2gan_video_integration\\rev8\\board\\persist-fit37-20261103\\flash-before.bin",
+  "physical_cold_boot_verified": true,
+  "cold_boot_user_verified": true,
+  "standalone_boot": true,
+  "cold_boot_verified_at": "2026-11-03T17:17:57.6618571+08:00",
+  "cold_boot_evidence": "User physically removed PC USB power for 5 seconds and powered the board from a 5 V power bank; no debugger connection during acceptance.",
+  "cold_boot_feedback": "自动出画面，方向正确、无蓝点，手势正常",
+  "gesture_user_verified": true
+}

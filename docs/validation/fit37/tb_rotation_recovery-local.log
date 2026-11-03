@@ -1,0 +1,2 @@
+PASS RECOVERY: 4608000 exact recovered pixels; mid-frame VS abort RR=1 CP=3; SLVERR, early RLAST, late RLAST each counted once; no hang or underflow
+- tests/rotation/tb_rotation_recovery.sv:127: Verilog $finish

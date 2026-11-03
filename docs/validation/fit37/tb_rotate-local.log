@@ -1,0 +1,2 @@
+PASS ROT180: 2764800 exact pixels, 3 full 1280x720 frames, 320x480 sources, 3:2 vertical + 2x horizontal, 172800 AXI beats, 699 4KB boundaries, backpressure, atomic publish, zero errors/underflows
+- tests/rotation/tb_rotate.sv:80: Verilog $finish

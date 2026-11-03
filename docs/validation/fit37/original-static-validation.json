@@ -1,0 +1,16 @@
+{
+  "bit_sha256": "8c5f204dde7a94f03ec3d51f21302559d46756b2838fb36004b19d32edfd8883",
+  "static_image_only": true,
+  "neural_inference_running": false,
+  "camera_connected": false,
+  "style": 0,
+  "read_errors": 0,
+  "underflows": 0,
+  "read_frames_delta": 1337,
+  "sampled_ddr_readback_bytes": 192,
+  "rotation_visual_confirmed": true,
+  "flash_written": false,
+  "observation_minimum_seconds": 20,
+  "observation_includes_debug_overhead": true,
+  "user_feedback": "Direction correct, picture stable"
+}

@@ -9,6 +9,7 @@
 | `python tools/build_firmware.py --target line --check-reference` | 线条固件重建与参考二进制比较 |
 | `python tools/build_firmware.py --target autoboot --check-reference` | 自启动固件重建与参考二进制比较 |
 | `bash tests/run.sh` | 自动曝光、Bayer 插值、归一化、手势和风格字幕 |
+| `bash tests/rotation/run.sh` | fit37 整屏旋转、AXI 反压与 4 KiB 边界、帧中断及错误恢复、五种字幕与同步时序 |
 | `bash line-demo/tests/run.sh` | 摄像头 I²C、Sobel 图像质量、RGB 旁路、DDR、OSD 与完整视频通路 |
 | `python autoboot/tests/test_flash.py` | 启动包格式、CRC、分区边界、备份／写入顺序和无效备份拒绝；使用模拟设备 |
 | `bash autoboot/tests/run.sh` | 启动 SPI 的字节传输与 APB 访问 |

@@ -1,4 +1,4 @@
-"""Restore only the archived fit34 runtime AE settings; no firmware or Flash write."""
+"""Apply the shared fit34/fit37 runtime AE settings; no firmware or Flash write."""
 from pathlib import Path
 import argparse,os,socket,subprocess,time,json
 

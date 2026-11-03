@@ -5,22 +5,24 @@ import argparse,hashlib,json,os,struct,subprocess,time,zlib
 ROOT=Path(__file__).resolve().parents[1]
 CAPACITY=8*1024*1024
 MODEL_OFFSET=0x400000
+CONFIGURATIONS={'main':('prebuilt/fit37.hex','prebuilt/fit37.bit'),
+                'autoboot':('autoboot/prebuilt/autoboot.hex','autoboot/prebuilt/autoboot.bit')}
 def digest(data):return hashlib.sha256(data).hexdigest()
 def read_hex(path):return bytes.fromhex(Path(path).read_text(encoding='ascii'))
 def write_hex(path,data):Path(path).write_text(''.join(f'{v:02x}\n' for v in data),encoding='ascii')
 def make_payload(model):
     if not model or len(model)%4:raise ValueError('Model size must be nonzero and word-aligned')
     return struct.pack('<4I',0x50324254,len(model),zlib.crc32(model),1).ljust(256,b'\xff')+model
-def prepare(directory):
+def prepare(directory,target='autoboot'):
     directory.mkdir(parents=True,exist_ok=True)
     model=(ROOT/'models/models-five-fit24-compat.bin').read_bytes()
     payload=make_payload(model)
     if payload!=(ROOT/'autoboot/prebuilt/models-flash.bin').read_bytes():raise ValueError('Model package does not match this firmware boot header')
-    config=read_hex(ROOT/'autoboot/prebuilt/autoboot.hex')
+    config=read_hex(ROOT/CONFIGURATIONS[target][0])
     if not 0<len(config)<MODEL_OFFSET or MODEL_OFFSET+len(payload)>CAPACITY:raise ValueError('Flash layout exceeds partition bounds')
     write_hex(directory/'configuration.hex',config);write_hex(directory/'models.hex',payload)
     (directory/'models.bin').write_bytes(payload)
-    plan={'flash_bytes':CAPACITY,'configuration':{'offset':0,'bytes':len(config),'sha256':digest(config)},'models':{'offset':MODEL_OFFSET,'bytes':len(payload),'sha256':digest(payload),'model_crc32':f'{zlib.crc32(model):08x}'}}
+    plan={'target':target,'configuration_file':CONFIGURATIONS[target][0],'flash_bytes':CAPACITY,'configuration':{'offset':0,'bytes':len(config),'sha256':digest(config)},'models':{'offset':MODEL_OFFSET,'bytes':len(payload),'sha256':digest(payload),'model_crc32':f'{zlib.crc32(model):08x}'}}
     (directory/'layout.json').write_text(json.dumps(plan,indent=2)+'\n')
     return config,payload
 class Programmer:
@@ -55,9 +57,10 @@ class Programmer:
 def main():
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument('action',choices=['prepare','backup','program','restore'])
+    p.add_argument('--target',choices=CONFIGURATIONS,default='autoboot',help='main: fit37; autoboot: legacy fit32')
     p.add_argument('--efinity-home',default=os.environ.get('EFINITY_HOME','D:/FPGA/Efinity/2025.1'))
     p.add_argument('--backup-dir',type=Path,help='Directory containing backup.json and flash-before.bin for restore')
-    a=p.parse_args();out=ROOT/'build/autoboot-flash';config,payload=prepare(out)
+    a=p.parse_args();out=ROOT/'build/autoboot-flash';config,payload=prepare(out,a.target)
     if a.action=='prepare':print('Prepared configuration, model header and CRC at '+str(out));return
     restore_data=None
     if a.action=='restore':
@@ -77,6 +80,6 @@ def main():
     pgm.write('configuration-write',out/'configuration.hex',0)
     if pgm.read('configuration-readback',0,len(config))!=config:raise ValueError('Configuration readback mismatch')
     if pgm.read('models-readback',MODEL_OFFSET,len(payload))!=payload:raise ValueError('Model readback mismatch')
-    pgm.run('run',[ROOT/'autoboot/prebuilt/autoboot.bit','--mode','jtag'],'finished with JTAG programming')
+    pgm.run('run',[ROOT/CONFIGURATIONS[a.target][1],'--mode','jtag'],'finished with JTAG programming')
     print('Boot configuration and model package programmed and verified. Backup: '+str(session))
 if __name__=='__main__':main()

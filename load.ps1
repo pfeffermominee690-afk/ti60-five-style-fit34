@@ -1,5 +1,5 @@
 param(
-    [ValidateSet('main','line','autoboot')][string]$Target = 'main',
+    [ValidateSet('main','fit34','line','autoboot')][string]$Target = 'main',
     [ValidateSet('outdoor','defaults')][string]$Profile = 'outdoor',
     [switch]$VerifyOnly,
     [string]$EfinityHome = 'D:\FPGA\Efinity\2025.1',
@@ -14,10 +14,10 @@ if (Get-Process -Name openocd,riscv-none-embed-gdb -ErrorAction SilentlyContinue
     throw 'Close the existing board debugger before loading.'
 }
 $env:EFINITY_HOME = $EfinityHome
-$bit = switch ($Target) { 'line' { 'line-demo/prebuilt/line-demo.bit' } 'autoboot' { 'autoboot/prebuilt/autoboot.bit' } default { 'prebuilt/fit34.bit' } }
+$bit = switch ($Target) { 'fit34' { 'prebuilt/fit34.bit' } 'line' { 'line-demo/prebuilt/line-demo.bit' } 'autoboot' { 'autoboot/prebuilt/autoboot.bit' } default { 'prebuilt/fit37.bit' } }
 & (Join-Path $EfinityHome 'pgm/bin/ftdi_pgm.bat') (Join-Path $PSScriptRoot $bit) --mode jtag
 if ($LASTEXITCODE -ne 0) { throw 'JTAG loading failed.' }
-if ($Target -eq 'main' -and $Profile -eq 'outdoor') {
+if ($Target -in @('main','fit34') -and $Profile -eq 'outdoor') {
     Start-Sleep -Seconds 5
     & $Python (Join-Path $PSScriptRoot 'tools/apply_outdoor.py') --sdk $RiscvSdk
     if ($LASTEXITCODE -ne 0) { throw 'Exposure profile failed. See build/runtime.' }

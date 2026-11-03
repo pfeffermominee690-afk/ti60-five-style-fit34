@@ -1,0 +1,14 @@
+{
+  "commit": "73572cd3588f6880ab4492aa7ede6ba1e00b8cfa",
+  "tag": "fit34-recovery-20261103",
+  "overlay_files": [
+    "ti60f225_oob.xml",
+    "rtl/fps_osd.sv",
+    "rtl/rgb_pair_display.sv",
+    "rtl/video_pipeline.sv"
+  ],
+  "bit_file": "prebuilt/fit34.bit",
+  "hex_file": "prebuilt/fit34.hex",
+  "bit_sha256": "5907b3efdc905b4576c9074e2aca67f99ea75b9d17dc1633123d9c2ff2a638a6",
+  "elf_sha256": "6edd857b6b9fc079bc5e082ae37b043f4d030b9117fa9c89957dedbe75520753"
+}

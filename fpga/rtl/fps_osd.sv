@@ -4,7 +4,7 @@
 // display values; the label is unchanged. Do not use OSD for performance reports.
 // frame_start is a one-cycle pulse before the visible overlay region.
 module fps_osd #(
-    parameter X0=16, Y0=16
+    parameter X0=16, Y0=16, ROTATE_180=0, FRAME_WIDTH=1280, FRAME_HEIGHT=720
 )(
     input wire clk,rst_n,frame_start,
     input wire [11:0] x,y,
@@ -16,14 +16,18 @@ module fps_osd #(
     output reg out_de,out_hs,out_vs,
     output reg [23:0] out_rgb
 );
+    // Rotate only the overlay sampling coordinates. Video sync and the
+    // unmodified input coordinates still define the physical raster/frame start.
+    wire [11:0] display_x=ROTATE_180 ? (FRAME_WIDTH-1-x) : x;
+    wire [11:0] display_y=ROTATE_180 ? (FRAME_HEIGHT-1-y) : y;
     reg [11:0] shown_bcd;
     reg shown_valid;
     reg [2:0] shown_style;
-    wire original_label=(x>=16 && x<80 && y>=48 && y<80);
-    wire style_label=(x>=656 && x<912 && y>=16 && y<48 && shown_style>=1 && shown_style<=5);
+    wire original_label=(display_x>=16 && display_x<80 && display_y>=48 && display_y<80);
+    wire style_label=(display_x>=656 && display_x<912 && display_y>=16 && display_y<48 && shown_style>=1 && shown_style<=5);
     wire label_panel=original_label || style_label;
-    wire [11:0] label_x=original_label ? (x-12'd16) : (x-12'd656);
-    wire [11:0] label_y=original_label ? (y-12'd48) : (y-12'd16);
+    wire [11:0] label_x=original_label ? (display_x-12'd16) : (display_x-12'd656);
+    wire [11:0] label_y=original_label ? (display_y-12'd48) : (display_y-12'd16);
     wire [2:0] label_id=original_label ? 3'd0 : shown_style;
     reg title_font [0:16383];
     initial $readmemh("title-font.hex",title_font);
@@ -62,9 +66,9 @@ module fps_osd #(
     endfunction
     always @* begin
       dx=0;dy=0;character=0;column=0;row=0;ch=" ";glyph=0;ink=0;
-      in_panel=(x>=X0 && x<X0+84 && y>=Y0 && y<Y0+14);
+      in_panel=(display_x>=X0 && display_x<X0+84 && display_y>=Y0 && display_y<Y0+14);
       if(in_panel) begin
-        dx=(x-X0)>>1;dy=(y-Y0)>>1;
+        dx=(display_x-X0)>>1;dy=(display_y-Y0)>>1;
         // Constant compare/subtract avoids a synthesized divider for /6.
         if(dx<6) begin character=0;column=dx;end
         else if(dx<12) begin character=1;column=dx-6;end

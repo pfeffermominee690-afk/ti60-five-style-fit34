@@ -45,7 +45,7 @@ module video_pipeline(
  wire pair_de,pair_hs,pair_vs,render_de,render_hs,render_vs;
  wire [23:0] pair_rgb,render_rgb;
  wire [11:0] pair_x,pair_y;
- rgb_pair_display #(.SOURCE_WIDTH(1280),.PANEL_WIDTH(320),.ORIGINAL_PITCH(1920),.LEFT_X(0),.RIGHT_X(640),.TOP_Y(0),.SCALE_3_2(1),.SCALE_X_2(1)) display(
+ rgb_pair_display #(.ROTATE_180(1),.SOURCE_WIDTH(1280),.PANEL_WIDTH(320),.ORIGINAL_PITCH(1920),.LEFT_X(0),.RIGHT_X(640),.TOP_Y(0),.SCALE_3_2(1),.SCALE_X_2(1)) display(
   .clk(clk),.pclk(pclk),.rst_n(rst_n),.publish(publish),.input_address(input_address),
   .result_address(result_address),.job_id(job_id),.pending(pending),.front_valid(front_valid),
   .ack(ack),.front_job(front_job),.read_errors(read_errors),.read_frames(read_frames),.underflows(underflows),
@@ -99,7 +99,7 @@ module video_pipeline(
   if(!rst_n)begin style_sync1<=0;style_sync2<=0;end
   else begin style_sync1<=front_job[31:29];style_sync2<=style_sync1;end
  end
- fps_osd osd(.clk(pclk),.rst_n(rst_n),.frame_start(render_vs && !render_vs_d),
+ fps_osd #(.ROTATE_180(1)) osd(.clk(pclk),.rst_n(rst_n),.frame_start(render_vs && !render_vs_d),
   .x(pair_x),.y(pair_y),.de(render_de),.hs(render_hs),.vs(render_vs),.rgb(render_rgb),
   .fps_bcd(fps_bcd),.fps_valid(fps_valid),.style_id(style_sync2),.out_de(o_de),.out_hs(o_hs),.out_vs(o_vs),.out_rgb(o_rgb));
  // MIPI VS markers are separate from capture scans and successful inference.

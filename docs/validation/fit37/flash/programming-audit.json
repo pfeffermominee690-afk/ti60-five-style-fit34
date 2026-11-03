@@ -1,0 +1,17 @@
+{
+  "vendor_cli": "D:\\FPGA\\Efinity\\2025.1\\pgm\\bin\\efx_pgm\\ftdi_program.py",
+  "jtag_bridge_all_uses_chip_erase": false,
+  "erase_granularity_bytes": 4096,
+  "config_bytes": 1055701,
+  "erase_range_start": 0,
+  "erase_range_end_exclusive": 1056768,
+  "model_start": 4194304,
+  "full_flash_bytes": 8388608,
+  "bit_option_register_end": 404,
+  "active_hex_config_payload_start": 424,
+  "common_config_payload_bytes": 1055277,
+  "common_config_payload_sha256": "875dd5b6098d10b877e5404db8d7fb22fd4e43d57747ea77349c8fb82c22eed1",
+  "decoded_hex_sha256": "fd358f37a401ec03a18a2c40b89fc2d6a8da36883c00068e71bc5d0fd40c8fe5",
+  "bit_hex_payload_equivalence_checked": true,
+  "required_cold_boot": "Physical power removal and reapply; JTAG reload is not cold-boot proof"
+}
