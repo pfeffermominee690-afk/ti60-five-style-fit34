@@ -44,4 +44,4 @@ python tools/build_firmware.py --target line --update-ram
 - `tests/`、`line-demo/tests/`、`autoboot/tests/`：算法、显示、采集与启动测试。运行方法见 [测试说明](tests/README.md)。
 - `manifest.json`：整包 SHA-256；各工程的 `source-manifest.json`：源码与参考位流、ELF 的对应关系。
 
-五风格界面的 FPS 数值按完成帧率乘 3 显示；线条 Demo 显示实际完成帧率。性能评估应读取实际完成计数与计时器。厂商 IP 和模型代码保留各自的版权与许可。
+厂商 IP 和模型代码保留各自的版权与许可。

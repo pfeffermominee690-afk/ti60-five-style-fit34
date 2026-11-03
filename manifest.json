@@ -1,9 +1,9 @@
 {
-  "version": "complete-submission-20261103",
+  "version": "complete-submission-20261103-r2",
   "files": {
     ".gitattributes": "c8ea2777b83197748821c009c494a298ac555caca3e3a174a5963682bdf56ca9",
     ".gitignore": "3f80d8a76f26295b6748fef4fb62505b91bc92d3fcace758406fe57504bf5a6d",
-    "README.md": "652d91002138efbd6b0b6fa7c746ec4c7f5df6c4df452a73d5e6a89346b4cf6b",
+    "README.md": "c70c76fb9174eaa25ed9e6b42f3d22faa5324ff83cc7c63fe65b75f2f47729d7",
     "autoboot/README.md": "585d7032a076e689e15b550899b27369c26ee93ed0032c381d1aab55dcb63f7e",
     "autoboot/firmware/network_autoboot.c": "028d3e3d870cf0007853112dd62540d73caf016ebb1f48e53f60111bf41c9626",
     "autoboot/flash.py": "dd4d94ff8e7af46d09b81d935b2c680980398477000c4f866f6e824caed7a046",
