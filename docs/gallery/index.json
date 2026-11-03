@@ -268,5 +268,23 @@
       "width": 1706,
       "height": 849
     }
+  },
+  {
+    "id": 16,
+    "group": "基础线稿 Demo",
+    "caption": "Sobel 黑白线稿",
+    "file": "docs/gallery/originals/line-demo/line-art.jpg",
+    "original_filename": "demo-30fps-02.jpg",
+    "sha256": "086bc74cd7250321ebc03ef0cc11481ebba699242cee4939948c1defda27c535",
+    "width": 1706,
+    "height": 1279,
+    "display_file": "docs/gallery/display/line-demo/line-art.png",
+    "display_sha256": "9efb431095604e1dc4829e3a8df1646c45bdfc26868eeddcdce01ba269a02701",
+    "crop_box": {
+      "x": 0,
+      "y": 240,
+      "width": 1706,
+      "height": 1039
+    }
   }
 ]

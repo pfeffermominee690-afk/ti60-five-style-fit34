@@ -1,6 +1,6 @@
 # 显示屏实拍照片
 
-全部 15 张原照按现实人物、手机人物和风景分组保存，照片内容与原始文件一致。README 使用另存于 `display/` 的裁剪副本，仅去掉屏幕上方的面板留白；点击图片可查看 `originals/` 中未修改的原照。
+全部 16 张原照按现实人物、手机人物、风景和基础线稿 Demo 分组保存，照片内容与原始文件一致。README 使用另存于 `display/` 的裁剪副本，去掉屏幕外的多余区域并保留完整显示画面；点击图片可查看 `originals/` 中未修改的原照。
 
 | 分组 | 图片 | 风格／画面 |
 |---|---|---|
@@ -19,5 +19,6 @@
 | 风景 | [查看原照](originals/landscapes/display-13.jpg) | 蓝黄笔触 · 山景 |
 | 风景 | [查看原照](originals/landscapes/display-15.jpg) | 蓝黄笔触 · 树林 |
 | 风景 | [查看原照](originals/landscapes/display-14.jpg) | 排线速写 |
+| 基础线稿 Demo | [查看原照](originals/line-demo/line-art.jpg) | Sobel 黑白线稿 |
 
 文件名对应关系、裁剪范围、尺寸及 SHA-256 见 [index.json](index.json)。

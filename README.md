@@ -4,9 +4,9 @@
 
 ## 实机效果
 
-摄像头采集、FPGA 风格化、HDMI 输出。以下 15 张实拍按场景分组，展示副本裁去屏幕上方的面板留白，保留完整屏幕、原图对照和风格名称；点击图片可查看未裁剪原照。
+摄像头采集、FPGA 风格化、HDMI 输出。以下 15 张五风格实拍按场景分组，展示副本裁去屏幕上方的面板留白，保留完整屏幕、原图对照和风格名称；点击图片可查看未裁剪原照。
 
-[现实人物 · 5 张](#现实人物) · [手机人物 · 7 张](#手机人物) · [风景 · 3 张](#风景)
+[现实人物 · 5 张](#现实人物) · [手机人物 · 7 张](#手机人物) · [风景 · 3 张](#风景) · [基础线稿 Demo](#基础线稿-demo)
 
 ### 现实人物
 
@@ -106,6 +106,15 @@
 </table>
 
 [浏览全部原始照片与分组索引](docs/gallery/README.md)
+
+### 基础线稿 Demo
+
+独立 Sobel 工程将摄像头画面转换为黑白线稿，以 640×480 分辨率输出至 HDMI 显示屏。源码与运行方法见 [线条 Demo](line-demo/README.md)。
+
+<p align="center">
+<a href="docs/gallery/originals/line-demo/line-art.jpg"><img src="docs/gallery/display/line-demo/line-art.png" alt="基础 Sobel 线稿 Demo 实拍：瓶子与室内物体的黑白轮廓，屏幕显示 LINE ART 640X480 FPS 30.00" width="900"></a><br>
+<strong>基础线稿 Demo · 实机效果</strong>
+</p>
 
 ## 外壳与机械设计
 
