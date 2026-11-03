@@ -8,17 +8,40 @@
 
 摄像头采集、FPGA 风格化、HDMI 输出。以下 15 张五风格实拍按场景分组，展示副本裁去屏幕上方的面板留白，保留完整屏幕、原图对照和风格名称；点击图片可查看未裁剪原照。
 
-[手势切换演示](#手势切换演示) · [现实人物 · 5 张](#现实人物) · [手机人物 · 7 张](#手机人物) · [风景 · 3 张](#风景) · [基础线稿 Demo](#基础线稿-demo)
+[视频演示 · 4 段](#视频演示) · [现实人物 · 5 张](#现实人物) · [手机人物 · 7 张](#手机人物) · [风景 · 3 张](#风景) · [基础线稿 Demo](#基础线稿-demo)
 
-### 手势切换演示
+### 视频演示
 
-在摄像头前挥手切换风格，屏幕同步更新处理效果与风格名称。
+四段实机视频展示五种风格的场景与人物效果、独立线条处理和手势切换。点击动图查看完整视频；场景与人物动图为片段预览。
 
-<p align="center">
-<a href="docs/media/gesture-switch.mp4"><img src="docs/media/gesture-switch.gif" alt="手势切换实拍动图：挥手后，屏幕右侧切换风格化效果" width="320"></a>
-</p>
+<table>
+<tr>
+<td width="50%" align="center" valign="top">
+<a href="docs/media/originals/five-style-scenes-20261104.mp4"><img src="docs/media/previews/five-style-scenes-20261104.gif" alt="五种风格 · 场景混剪视频预览" width="100%"></a><br>
+<strong>五种风格 · 场景混剪</strong><br>
+<a href="docs/media/originals/five-style-scenes-20261104.mp4">完整视频 · 1:48</a>
+</td>
+<td width="50%" align="center" valign="top">
+<a href="docs/media/videos/five-style-portraits-20261104.mp4"><img src="docs/media/previews/five-style-portraits-20261104.gif" alt="五种风格 · 人物混剪视频预览" width="100%"></a><br>
+<strong>五种风格 · 人物混剪</strong><br>
+<a href="docs/media/videos/five-style-portraits-20261104.mp4">完整视频 · 0:49</a>
+</td>
+</tr>
+<tr>
+<td width="50%" align="center" valign="top">
+<a href="docs/media/videos/line-demo-20261104.mp4"><img src="docs/media/previews/line-demo-20261104.gif" alt="独立线条测试 Demo视频预览" width="100%"></a><br>
+<strong>独立线条测试 Demo</strong><br>
+<a href="docs/media/videos/line-demo-20261104.mp4">完整视频 · 0:12</a>
+</td>
+<td width="50%" align="center" valign="top">
+<a href="docs/media/videos/gesture-switch-20261104.mp4"><img src="docs/media/previews/gesture-switch-20261104.gif" alt="手势切换演示视频预览" width="100%"></a><br>
+<strong>手势切换演示</strong><br>
+<a href="docs/media/videos/gesture-switch-20261104.mp4">完整视频 · 0:24</a>
+</td>
+</tr>
+</table>
 
-[查看完整演示视频（14 秒）](docs/media/gesture-switch.mp4) · [原始视频](docs/media/originals/gesture-switch.mp4)
+[浏览全部视频与原始文件](docs/media/README.md)
 
 ### 现实人物
 

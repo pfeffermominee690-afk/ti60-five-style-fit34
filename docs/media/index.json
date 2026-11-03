@@ -1,22 +1,102 @@
 {
-  "title": "手势切换演示",
-  "duration_seconds": 14.2,
-  "original_filename": "4434866f8cb13ae1896572c3b729a501.mp4",
-  "files": [
+  "videos": [
     {
-      "file": "docs/media/originals/gesture-switch.mp4",
-      "kind": "original",
-      "sha256": "17fdbd9b89758876a470ff6a2b684a9d1b49e7c753383c817c1df5d9d6ea14e0"
+      "id": "five-style-scenes",
+      "title": "五种风格 · 场景混剪",
+      "original_filename": "d31f2846f6ce028eecf8d109f9df08bf.mp4",
+      "duration_seconds": 107.926531,
+      "original_file": "docs/media/originals/five-style-scenes-20261104.mp4",
+      "original_sha256": "cbe3d86ffde3336dc837cfaec12caba4922bca36320feae6a395fd8cb3ebd126",
+      "video_file": "docs/media/originals/five-style-scenes-20261104.mp4",
+      "video_sha256": "cbe3d86ffde3336dc837cfaec12caba4922bca36320feae6a395fd8cb3ebd126",
+      "preview_file": "docs/media/previews/five-style-scenes-20261104.gif",
+      "preview_sha256": "baffd64a0b8c84f3a645f689f0744a04c517f0dc775653133cfc7cf94e62d23e",
+      "preview_width": 400,
+      "preview_fps": 8,
+      "preview_duration_seconds": 8.01,
+      "preview_segments_seconds": [
+        [
+          3,
+          2
+        ],
+        [
+          30,
+          2
+        ],
+        [
+          61,
+          2
+        ],
+        [
+          90,
+          2
+        ]
+      ]
     },
     {
-      "file": "docs/media/gesture-switch.mp4",
-      "kind": "h264-video",
-      "sha256": "41cd768e969bc5929c424f50a840bde8e1c0da571c2af09e1a7607588a36a74d"
+      "id": "five-style-portraits",
+      "title": "五种风格 · 人物混剪",
+      "original_filename": "e2cac637c7144d49429a6a83af3596cd.mp4",
+      "duration_seconds": 48.553039,
+      "original_file": "docs/media/originals/five-style-portraits-20261104.mp4",
+      "original_sha256": "d4b92e9e7a4d2f2db7385dc908d8ab1e3684d664a79c9ce0dea4ef95c45bf8e4",
+      "video_file": "docs/media/videos/five-style-portraits-20261104.mp4",
+      "video_sha256": "d1057436af5de216aba7e784d4ee0cc3e0370f7482d5b28c4f72475a6f8c3a35",
+      "preview_file": "docs/media/previews/five-style-portraits-20261104.gif",
+      "preview_sha256": "8bf40a6f198a5ae018ffd5e6185c1ecd34df86525e16dec0a2d9835757f6aec0",
+      "preview_width": 400,
+      "preview_fps": 8,
+      "preview_duration_seconds": 8.01,
+      "preview_segments_seconds": [
+        [
+          1,
+          2
+        ],
+        [
+          12,
+          2
+        ],
+        [
+          25,
+          2
+        ],
+        [
+          38,
+          2
+        ]
+      ]
     },
     {
-      "file": "docs/media/gesture-switch.gif",
-      "kind": "animated-preview",
-      "sha256": "e8c43ec45015ba7513cbebded601fc355a1becc2d178c423d1d0a5a1f5f28401"
+      "id": "line-demo",
+      "title": "独立线条测试 Demo",
+      "original_filename": "d32e5bde8f8b9177f22d906d2f8edde5.mp4",
+      "duration_seconds": 12.144082,
+      "original_file": "docs/media/originals/line-demo-20261104.mp4",
+      "original_sha256": "6a9f971ff8c9ff2deb28cf042666c9311d56e895e60a56dc5b579568384a54e8",
+      "video_file": "docs/media/videos/line-demo-20261104.mp4",
+      "video_sha256": "67383b5fc7162bf5b55337e24d100016815f87261e786aafc9c7e9bff8e98780",
+      "preview_file": "docs/media/previews/line-demo-20261104.gif",
+      "preview_sha256": "864a037957762a31fdbd67a01d3b581745d4825781b97271cfedb39351113bf6",
+      "preview_width": 400,
+      "preview_fps": 8,
+      "preview_duration_seconds": 12.13,
+      "preview_segments_seconds": null
+    },
+    {
+      "id": "gesture-switch",
+      "title": "手势切换演示",
+      "original_filename": "966b560c58d2f99d8e12f219caed1435.mp4",
+      "duration_seconds": 24.032721,
+      "original_file": "docs/media/originals/gesture-switch-20261104.mp4",
+      "original_sha256": "2bc7e71575f25cb35496103203de9cfa59c90e989bc424006462f978ebed26b9",
+      "video_file": "docs/media/videos/gesture-switch-20261104.mp4",
+      "video_sha256": "96ec850d3595559c3e3435fc64b9f94d37d7722324a3fbb027993c2a33f8d1e1",
+      "preview_file": "docs/media/previews/gesture-switch-20261104.gif",
+      "preview_sha256": "32d100c53f706c49ffee8b5057bf4c2d114d3106b8452b0a806be1bd4188d318",
+      "preview_width": 400,
+      "preview_fps": 8,
+      "preview_duration_seconds": 24.01,
+      "preview_segments_seconds": null
     }
   ]
 }
