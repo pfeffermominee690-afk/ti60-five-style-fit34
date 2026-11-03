@@ -1,9 +1,9 @@
 {
-  "version": "complete-submission-20261103-line-demo-photo",
+  "version": "complete-submission-20261103-enclosure-camera-layouts",
   "files": {
     ".gitattributes": "c8ea2777b83197748821c009c494a298ac555caca3e3a174a5963682bdf56ca9",
     ".gitignore": "3f80d8a76f26295b6748fef4fb62505b91bc92d3fcace758406fe57504bf5a6d",
-    "README.md": "94375257cc88cfc8707b0cf9bd4220fe57ef58c1e38a2268889ea02deb355971",
+    "README.md": "059e479831bb2bacbd2ff085185fe557628a8853b578aa3aa1c530b4db7a8d2a",
     "autoboot/README.md": "585d7032a076e689e15b550899b27369c26ee93ed0032c381d1aab55dcb63f7e",
     "autoboot/firmware/network_autoboot.c": "028d3e3d870cf0007853112dd62540d73caf016ebb1f48e53f60111bf41c9626",
     "autoboot/flash.py": "dd4d94ff8e7af46d09b81d935b2c680980398477000c4f866f6e824caed7a046",
@@ -298,7 +298,7 @@
     "autoboot/tests/tb_boot_spi.sv": "01ac176b65f668355353e8854726736511f6951077d8fd996f527e053094a2ab",
     "autoboot/tests/test_flash.py": "410adda2185a51e9d630290b0bc3aa4d682c6855e6a3fe5c14cd5a85f6a814f3",
     "build-fpga.ps1": "b138889609c77fefefe4b296e7d06a0e02035c4ae90b800e227f603828d544cc",
-    "docs/enclosures/README.md": "ac1544e019926cc8ed2f3dccaf5a7d6afe84416264fcc29c375a59118dcbeae7",
+    "docs/enclosures/README.md": "3133bc0ab76b25c1f807bc94f4fa30e29db95df37c9c38d8d67ad3c519d3ef31",
     "docs/enclosures/index.json": "35ce81d93fdd6b3c9bea66afb85bb91f3733321b1d1e2de51da421b4e7c84737",
     "docs/enclosures/originals/opposite-side/B01.jpg": "df77539fd7f7d832d09441df5f84a02273fbdf5d1879c156e290bf74fe597c15",
     "docs/enclosures/originals/opposite-side/B02.jpg": "dfcef119a9a5641eb708d7e77145aa09eb421f0a72dde3a1b05d55f5e0b896ac",

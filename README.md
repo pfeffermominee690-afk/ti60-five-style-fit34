@@ -118,19 +118,38 @@
 
 ## 外壳与机械设计
 
-两套外壳均由团队自主建模并采用 3D 打印制作。第一套将摄像头与屏幕布置在同侧；第二套将摄像头与屏幕分置两面。外壳使用 ABS、PLA Basic、PETG 等材料，整机由充电宝供电。
+两套外壳均由团队自主建模并采用 3D 打印制作。第一套采用前置摄像头布局，镜头与屏幕位于同侧；第二套采用后置摄像头布局，镜头位于屏幕背面。外壳使用 ABS、PLA Basic、PETG 等材料，整机由充电宝供电。
 
-### 两套实物
+### 两套实物：前置与后置摄像头
 
 <table>
 <tr>
-<td width="50%" align="center" valign="middle">
-<a href="docs/enclosures/originals/same-side/A01.jpg"><img src="docs/enclosures/originals/same-side/A01.jpg" alt="第一套 · 整机外观" width="100%"></a><br>
-<strong>第一套 · 整机外观</strong>
+<td width="33%" align="center" valign="top">
+<a href="docs/enclosures/originals/same-side/A01.jpg"><img src="docs/enclosures/originals/same-side/A01.jpg" alt="第一套外壳：前置摄像头与屏幕位于同一面" width="100%"></a><br>
+<strong>第一套 · 前置摄像头与屏幕</strong>
 </td>
-<td width="50%" align="center" valign="middle">
-<a href="docs/enclosures/originals/opposite-side/B02.jpg"><img src="docs/enclosures/originals/opposite-side/B02.jpg" alt="第二套 · 屏幕面外观" width="100%"></a><br>
-<strong>第二套 · 屏幕面外观</strong>
+<td width="34%" align="center" valign="top">
+<a href="docs/enclosures/originals/opposite-side/B02.jpg"><img src="docs/enclosures/originals/opposite-side/B02.jpg" alt="第二套外壳正面：显示屏，摄像头位于另一面" width="100%"></a><br>
+<strong>第二套 · 正面屏幕</strong>
+</td>
+<td width="33%" align="center" valign="top">
+<a href="docs/enclosures/originals/opposite-side/B04.jpg"><img src="docs/enclosures/originals/opposite-side/B04.jpg" alt="第二套外壳背面：后置摄像头，与屏幕分置两面" width="100%"></a><br>
+<strong>第二套 · 后置摄像头</strong>
+</td>
+</tr>
+</table>
+
+### 内部装配与开发板
+
+<table>
+<tr>
+<td width="50%" align="center" valign="top">
+<a href="docs/enclosures/originals/same-side/A04.jpg"><img src="docs/enclosures/originals/same-side/A04.jpg" alt="第一套内部装配：Ti60 开发板、摄像头排线与显示屏连接" width="100%"></a><br>
+<strong>第一套 · 开发板与前面板连接</strong>
+</td>
+<td width="50%" align="center" valign="top">
+<a href="docs/enclosures/originals/opposite-side/B03.jpg"><img src="docs/enclosures/originals/opposite-side/B03.jpg" alt="第二套内部装配：Ti60 开发板、后置摄像头、显示屏与移动电源" width="100%"></a><br>
+<strong>第二套 · 开发板与内部布局</strong>
 </td>
 </tr>
 </table>
