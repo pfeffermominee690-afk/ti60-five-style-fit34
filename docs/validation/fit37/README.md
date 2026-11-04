@@ -20,7 +20,3 @@ fit37 使用 J4 上的 SC431HAI 摄像头，保留 fit34 的 Bayer 彩点／竖�
 - 用户拔掉电脑 USB、等待 5 秒后接入充电宝，确认“自动出画面，方向正确、无蓝点，手势正常”。物理断电自启动及启动后的手势切换通过实机验收，见 [冷启动确认记录](cold-boot-user-confirmation.json)。
 
 [原始构建审查](original-build-review.json) 和 [早期静态显示记录](original-static-validation.json) 按原样保留，其中摄像头验证字段反映早期测试条件；当前实时验证以 `camera-runtime.json` 为准。
-
-实际推理沿用约 9 fps 的口径；OSD 数值沿用完成帧率乘 3 的显示规则。上述短时运行记录用于功能确认，不作为新的吞吐基准。
-
-Flash 与物理冷启动状态以 [发布验证状态](status.json) 的独立字段为准。
