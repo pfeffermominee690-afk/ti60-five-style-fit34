@@ -2,7 +2,7 @@
 
 [![流光绘影完整视频动态预览，点击播放](docs/media/previews/liuguang-showcase.gif)](https://pfeffermominee690-afk.github.io/ti60-five-style-fit34/)
 
-**[▶ 播放完整视频 · 原理与成果展示](https://pfeffermominee690-afk.github.io/ti60-five-style-fit34/)**　1080p · 8 分 17 秒　[下载 MP4 原片](https://github.com/pfeffermominee690-afk/ti60-five-style-fit34/releases/download/showcase-20261105/liuguang-1080p.mp4)
+**[▶ 播放完整视频 · 原理与成果展示](https://pfeffermominee690-afk.github.io/ti60-five-style-fit34/)**　960×544 · 8 分 28 秒　[下载 MP4 原片](https://github.com/pfeffermominee690-afk/ti60-five-style-fit34/releases/download/showcase-selected-20261105/liuguang-selected.mp4)
 
 本项目运行于 Ti60F225 开发板，使用 SC431HAI CSI 摄像头采集图像，经 FPGA 处理后输出至 HDMI 显示屏。工程包含五种神经网络风格、独立 Sobel 线条 Demo，以及从板载 Flash 加载程序和模型的开机自启动实现。
 
